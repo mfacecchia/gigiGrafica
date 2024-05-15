@@ -11,19 +11,52 @@
     body{
         @apply bg-gray-100;
     }
-    h1, p, b, a{
+    h1, p, b, a, li{
         font-family: 'LeagueSpartan'
     }
+    h1{
+        @apply font-bold text-2xl;
+    }
+    a{
+        @apply font-semibold;
+    }
     nav{
-        @apply w-full px-11 py-3 flex justify-start items-center backdrop-blur-md bg-slate-300/70 fixed top-0 left-0;
+        @apply w-full px-11 py-3 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0;
     }
     nav img{
         @apply h-11 w-auto;
+    }
+    section{
+        @apply w-full px-11 box-border;
+    }
+    ul li{
+        @apply list-disc;
+    }
+    hr{
+        @apply my-11 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
 }
 
 @layer components{
     .sectionLink{
         @apply px-3 py-0 border border-solid border-black rounded-full flex justify-center items-center;
+    }
+    #personalInfo > div{
+        @apply space-y-2
+    }
+    #personalInfo div p{
+        @apply text-justify leading-tight;
+    }
+    #personalInfo div img{
+        @apply size-6 mt-0;
+    }
+    #software div{
+        @apply flex gap-x-2 justify-start items-center;
+    }
+    #software div p{
+        @apply font-semibold;
+    }
+    #social{
+        @apply flex justify-center items-center;
     }
 }
