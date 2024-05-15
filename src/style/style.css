@@ -405,6 +405,27 @@ video {
     h1, p, b, a{
         font-family: 'LeagueSpartan'
     }
+    nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(203 213 225 / 0.7);
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+    nav img {
+  height: 2.75rem;
+  width: auto;
+}
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -533,6 +554,9 @@ video {
 .h-32 {
   height: 8rem;
 }
+.h-\[1000px\] {
+  height: 1000px;
+}
 .h-\[500px\] {
   height: 500px;
 }
@@ -556,4 +580,8 @@ video {
 }
 .gap-y-7 {
   row-gap: 1.75rem;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
