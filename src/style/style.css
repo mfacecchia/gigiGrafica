@@ -593,6 +593,15 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+a:hover {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 .sectionLink {
   display: flex;
   align-items: center;
@@ -606,6 +615,9 @@ video {
   padding-right: 0.75rem;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.sectionLink img {
+  height: 1.25rem;
 }
 #personalInfo > div > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;

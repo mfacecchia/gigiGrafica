@@ -44,8 +44,14 @@
 }
 
 @layer components{
+    a:hover{
+        @apply animate-pulse;
+    }
     .sectionLink{
         @apply px-3 py-0 border border-solid border-black rounded-full flex justify-center items-center;
+    }
+    .sectionLink img{
+        @apply h-5;
     }
     #personalInfo > div{
         @apply space-y-2
