@@ -5,10 +5,19 @@
 @layer base{
     @font-face {
         font-family: 'LeagueSpartan';
-        src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf');
+        src: url('../assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
         font-display: swap;
+    }
+    body{
+        @apply bg-gray-100;
     }
     h1, p, b, a{
         font-family: 'LeagueSpartan'
+    }
+}
+
+@layer components{
+    .sectionLink{
+        @apply px-3 py-0 border border-solid border-black rounded-full flex justify-center items-center;
     }
 }

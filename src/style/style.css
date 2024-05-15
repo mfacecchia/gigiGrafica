@@ -393,6 +393,18 @@ video {
 [hidden] {
   display: none;
 }
+    @font-face {
+        font-family: 'LeagueSpartan';
+        src: url('../assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
+        font-display: swap;
+    }
+    body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+    h1, p, b, a{
+        font-family: 'LeagueSpartan'
+    }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -501,11 +513,47 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
+.sectionLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+.flex {
+  display: flex;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-\[500px\] {
+  height: 500px;
+}
+.w-auto {
+  width: auto;
+}
+.w-full {
+  width: 100%;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-y-7 {
+  row-gap: 1.75rem;
 }
