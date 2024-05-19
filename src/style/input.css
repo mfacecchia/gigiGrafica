@@ -8,6 +8,9 @@
         src: url('../assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
         font-display: swap;
     }
+    *{
+        @apply scroll-smooth;
+    }
     body{
         @apply bg-gray-100;
     }
@@ -76,5 +79,14 @@
     }
     #social img{
         @apply h-7;
+    }
+    .project{
+        @apply text-center my-11;
+    }
+    .project h1{
+        @apply text-5xl;
+    }
+    .project article{
+        @apply flex;
     }
 }
