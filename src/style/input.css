@@ -50,6 +50,9 @@
     .fade.active{
         @apply translate-y-0 opacity-100;
     }
+    #logo{
+        height: calc(100vh - 100px);
+    }
 }
 
 @layer components{
