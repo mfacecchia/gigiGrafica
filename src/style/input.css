@@ -44,6 +44,12 @@
     hr{
         @apply my-11 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
+    .fade{
+        @apply opacity-0 transition-opacity duration-1000;
+    }
+    .fade.active{
+        @apply opacity-100;
+    }
 }
 
 @layer components{
