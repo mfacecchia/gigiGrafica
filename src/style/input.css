@@ -36,7 +36,7 @@
         @apply flex items-center justify-between px-0;
     }
     section{
-        @apply w-full px-11 box-border;
+        @apply w-1/2 px-11 box-border mx-auto;
     }
     ul li{
         @apply list-disc;
@@ -57,6 +57,9 @@
         @apply h-5;
     }
     #personalInfo > div{
+        @apply space-y-8
+    }
+    #personalInfo article{
         @apply space-y-2
     }
     #personalInfo div p{
@@ -88,5 +91,8 @@
     }
     .project article{
         @apply flex;
+    }
+    #manifesti aside div{
+        @apply rounded-xl overflow-hidden;
     }
 }
