@@ -42,7 +42,7 @@
         @apply list-disc;
     }
     hr{
-        @apply my-11 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
+        @apply my-20 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
     .fade{
         @apply translate-y-32 opacity-0 transition-all duration-1000;
@@ -93,15 +93,24 @@
         @apply h-7;
     }
     .project{
-        @apply text-center my-11;
+        @apply my-11;
+    }
+    .project header{
+        @apply space-y-5;
     }
     .project h1{
         @apply text-5xl;
     }
     .project article{
-        @apply flex;
+        @apply w-full flex flex-wrap gap-x-4 gap-y-7 mt-11;
     }
-    #manifesti aside div{
-        @apply rounded-xl overflow-hidden;
+    .project article div{
+        @apply bg-cover bg-center rounded-2xl h-80 box-border p-4 shadow-xl flex justify-between;
+    }
+    .project article div main{
+        @apply space-y-0 leading-tight;
+    }
+    .project article div svg{
+        @apply size-5;
     }
 }
