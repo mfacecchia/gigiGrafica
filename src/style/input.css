@@ -45,10 +45,10 @@
         @apply my-11 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
     .fade{
-        @apply opacity-0 transition-opacity duration-1000;
+        @apply translate-y-32 opacity-0 transition-all duration-1000;
     }
     .fade.active{
-        @apply opacity-100;
+        @apply translate-y-0 opacity-100;
     }
 }
 
