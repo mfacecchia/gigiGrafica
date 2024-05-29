@@ -420,6 +420,7 @@ video {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 50;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -831,11 +832,11 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(68 37 97 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-photos_brown {
   --tw-text-opacity: 1;
   color: rgb(48 42 38 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }

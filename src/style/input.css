@@ -24,7 +24,7 @@
         @apply font-semibold;
     }
     nav{
-        @apply w-full px-11 py-3 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0;
+        @apply w-full px-11 py-3 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0 z-50;
     }
     footer{
         @apply w-full px-11 pt-11 pb-3 box-border bg-black/80 flex flex-col items-center justify-center space-y-5 text-white;
