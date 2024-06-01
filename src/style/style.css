@@ -711,7 +711,7 @@ a:hover {
        column-gap: 1rem;
   row-gap: 1.75rem;
 }
-.project article div {
+.project article a {
   box-sizing: border-box;
   display: flex;
   height: 20rem;
@@ -727,7 +727,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.project article div:hover {
+.project article a:hover {
   --tw-scale-x: 102%;
   --tw-scale-y: 102%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -735,15 +735,15 @@ a:hover {
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.project article div main > :not([hidden]) ~ :not([hidden]) {
+.project article a main > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
-.project article div main {
+.project article a main {
   line-height: 1.25;
 }
-.project article div svg {
+.project article a svg {
   width: 1.25rem;
   height: 1.25rem;
 }
@@ -753,7 +753,7 @@ a:hover {
 }
 .project-header div {
   box-sizing: border-box;
-  height: 15rem;
+  height: 20rem;
   --tw-bg-opacity: 1;
   background-color: rgb(164 165 165 / var(--tw-bg-opacity));
   padding: 2.75rem;
@@ -849,6 +849,9 @@ a:hover {
 .mt-0 {
   margin-top: 0px;
 }
+.mt-11 {
+  margin-top: 2.75rem;
+}
 .flex {
   display: flex;
 }
@@ -858,8 +861,8 @@ a:hover {
 .h-32 {
   height: 8rem;
 }
-.h-96 {
-  height: 24rem;
+.h-\[480px\] {
+  height: 480px;
 }
 .h-auto {
   height: auto;
