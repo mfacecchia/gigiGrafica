@@ -121,15 +121,34 @@
         @apply h-60 p-11 box-border bg-[#a4a5a5];
     }
     .project-header h1{
-        @apply inline-block pr-3 bg-[#313131] text-white;
+        @apply text-4xl inline-block pr-3 bg-[#313131] text-white;
+    }
+    .project-header p{
+        @apply text-xl;
     }
     .projects-grid{
-        @apply grid grid-cols-1 justify-center gap-11;
+        @apply w-2/5 grid grid-cols-1 justify-center gap-11;
     }
     .projects-grid article{
-        @apply flex gap-2
+        @apply flex justify-between items-center;
+    }
+    .projects-grid article:nth-child(even){
+        @apply flex-row-reverse;
+    }
+    .projects-grid article p{
+        @apply text-slate-600 leading-tight;
+    }
+    .projects-grid article div{
+        @apply space-y-3;
+    }
+    .projects-grid article > *{
+        @apply w-2/5;
     }
     .projects-grid article img{
-        @apply w-1/2;
+        @apply rounded-xl shadow-lg;
+    }
+    .backToStartBtn{
+        @apply -rotate-90 ml-auto w-11;
+        @apply hover:animate-pulse;
     }
 }

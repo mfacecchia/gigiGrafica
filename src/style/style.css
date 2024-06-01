@@ -763,21 +763,63 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 49 49 / var(--tw-bg-opacity));
   padding-right: 0.75rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.project-header p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .projects-grid {
   display: grid;
+  width: 40%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   justify-content: center;
   gap: 2.75rem;
 }
 .projects-grid article {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-grid article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.projects-grid article p {
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+.projects-grid article div > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.projects-grid article > * {
+  width: 40%;
 }
 .projects-grid article img {
-  width: 50%;
+  border-radius: 0.75rem;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.backToStartBtn {
+  margin-left: auto;
+  width: 2.75rem;
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.backToStartBtn:hover {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 .absolute {
   position: absolute;
@@ -790,6 +832,10 @@ a:hover {
 }
 .top-0 {
   top: 0px;
+}
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .mb-0 {
   margin-bottom: 0px;
