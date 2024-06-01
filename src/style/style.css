@@ -404,6 +404,7 @@ video {
     body {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  padding-top: 5rem;
 }
     h1, p, b, a, li{
         font-family: 'LeagueSpartan'
@@ -746,6 +747,50 @@ a:hover {
   width: 1.25rem;
   height: 1.25rem;
 }
+.project-header {
+  height: 500px;
+  width: 100%;
+}
+.project-header div {
+  box-sizing: border-box;
+  height: 15rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 165 165 / var(--tw-bg-opacity));
+  padding: 2.75rem;
+}
+.project-header h1 {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 49 49 / var(--tw-bg-opacity));
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  justify-content: center;
+  gap: 2.75rem;
+}
+.projects-grid article {
+  display: flex;
+  gap: 0.5rem;
+}
+.projects-grid article img {
+  width: 50%;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -766,6 +811,9 @@ a:hover {
 }
 .h-32 {
   height: 8rem;
+}
+.h-96 {
+  height: 24rem;
 }
 .h-auto {
   height: auto;

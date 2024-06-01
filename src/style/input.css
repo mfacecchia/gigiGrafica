@@ -12,7 +12,7 @@
         @apply scroll-smooth;
     }
     body{
-        @apply bg-gray-100;
+        @apply bg-gray-100 pt-20;
     }
     h1, p, b, a, li{
         font-family: 'LeagueSpartan'
@@ -113,5 +113,23 @@
     }
     .project article div svg{
         @apply size-5;
+    }
+    .project-header{
+        @apply w-full h-[500px];
+    }
+    .project-header div{
+        @apply h-60 p-11 box-border bg-[#a4a5a5];
+    }
+    .project-header h1{
+        @apply inline-block pr-3 bg-[#313131] text-white;
+    }
+    .projects-grid{
+        @apply grid grid-cols-1 justify-center gap-11;
+    }
+    .projects-grid article{
+        @apply flex gap-2
+    }
+    .projects-grid article img{
+        @apply w-1/2;
     }
 }
