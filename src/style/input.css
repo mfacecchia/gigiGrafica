@@ -115,9 +115,9 @@
         @apply size-5;
     }
     .project-header{
-        @apply w-full h-[500px];
+        @apply w-full h-[500px] relative;
     }
-    .project-header div{
+    .project-header > div{
         @apply h-80 p-11 box-border bg-[#a4a5a5];
     }
     .project-header h1{
@@ -150,5 +150,17 @@
     .backToStartBtn{
         @apply -rotate-90 ml-auto w-11;
         @apply hover:animate-pulse;
+    }
+    #dataSheet > div{
+        @apply space-y-5;
+    }
+    #dataSheet > div header{
+        @apply flex flex-col items-end;
+    }
+    #dataSheet > div div{
+        @apply flex gap-10;
+    }
+    #dataSheet > div div.gridElement{
+        @apply grid grid-cols-3 gap-5;
     }
 }
