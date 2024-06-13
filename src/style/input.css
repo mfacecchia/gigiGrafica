@@ -186,16 +186,16 @@
         @apply space-y-20
     }
     #dataSheet > div{
-        @apply space-y-0;
-        @apply sm:space-y-5;
+        @apply space-y-5;
     }
     #dataSheet > div header{
         @apply flex flex-col items-end;
     }
     #dataSheet > div div{
-        @apply flex gap-5;
+        @apply flex flex-col gap-5;
+        @apply md:flex-row;
     }
     #dataSheet > div div.gridElement{
-        @apply grid grid-cols-3 gap-5;
+        @apply grid gap-5;
     }
 }
