@@ -132,7 +132,7 @@
     .project article a svg{
         @apply size-5;
     }
-    .project-header{
+    .header{
         @apply w-full h-auto relative;
     }
     .project-header section{
