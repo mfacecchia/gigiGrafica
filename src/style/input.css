@@ -13,6 +13,7 @@
     }
     body{
         @apply bg-gray-100 pt-20;
+        @apply sm:pt-32
     }
     h1, p, b, a, li{
         font-family: 'LeagueSpartan'
@@ -70,9 +71,11 @@
     }
     #pageLinks{
         @apply flex flex-col justify-center gap-5;
+        @apply sm:flex-row;
     }
     #personalInfo{
         @apply h-auto grid grid-cols-1 gap-11;
+        @apply sm:grid-cols-2;
     }
     #personalInfo > div{
         @apply space-y-8
