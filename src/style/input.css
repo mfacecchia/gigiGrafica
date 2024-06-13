@@ -12,8 +12,7 @@
         @apply scroll-smooth;
     }
     body{
-        @apply bg-gray-100 pt-20;
-        @apply sm:pt-32
+        @apply bg-gray-100 pt-28;
     }
     h1, p, b, a, li{
         font-family: 'LeagueSpartan'
@@ -148,6 +147,7 @@
     .project-header > div{
         height: calc(100vh - 240px);
         @apply p-11 box-border bg-[#a4a5a5] overflow-hidden;
+        @apply sm:h-56
     }
     .project-header h1{
         @apply text-4xl inline-block pr-3 bg-[#313131] text-white;
