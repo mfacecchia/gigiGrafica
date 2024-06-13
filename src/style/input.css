@@ -185,6 +185,7 @@
     }
     #dataSheet > div{
         @apply space-y-0;
+        @apply sm:space-y-5;
     }
     #dataSheet > div header{
         @apply flex flex-col items-end;
