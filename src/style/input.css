@@ -130,10 +130,13 @@
         @apply size-5;
     }
     .project-header{
-        @apply w-full h-[500px] relative;
+        @apply w-full h-[400px] relative;
+    }
+    .project-header img{
+        @apply hidden;
     }
     .project-header > div{
-        @apply h-80 p-11 box-border bg-[#a4a5a5];
+        @apply h-56 p-11 box-border bg-[#a4a5a5];
     }
     .project-header h1{
         @apply text-4xl inline-block pr-3 bg-[#313131] text-white;
@@ -142,14 +145,15 @@
         @apply text-xl;
     }
     .projects-grid{
-        @apply w-2/5 grid grid-cols-1 justify-center gap-11;
+        @apply w-4/5 grid grid-cols-1 justify-center gap-11;
     }
     .projects-grid article{
-        @apply flex justify-between items-center;
+        @apply flex flex-col gap-3 justify-between items-center;
     }
-    .projects-grid article:nth-child(even){
+    /* TODO: Apply for desktop */
+    /* .projects-grid article:nth-child(even){
         @apply flex-row-reverse;
-    }
+    } */
     .projects-grid article p{
         @apply text-slate-600 leading-tight;
     }
@@ -157,7 +161,7 @@
         @apply space-y-3;
     }
     .projects-grid article > *{
-        @apply w-2/5;
+        @apply w-11/12;
     }
     .projects-grid article img{
         @apply rounded-xl shadow-lg;
