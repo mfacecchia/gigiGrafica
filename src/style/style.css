@@ -440,7 +440,7 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
     footer {
-  margin-top: 9rem;
+  margin-top: 5rem;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -775,11 +775,18 @@ a:hover {
 }
 .project-header {
   position: relative;
-  height: 400px;
+  height: auto;
   width: 100%;
+}
+.project-header section {
+  width: 100%;
+  padding: 0px;
 }
 .project-header img {
   display: none;
+}
+.project-header section img {
+  display: block;
 }
 .project-header > div {
   box-sizing: border-box;
@@ -854,10 +861,15 @@ a:hover {
 .backToStartBtn:hover {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+#dataSheet > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
 #dataSheet > div > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 #dataSheet > div header {
   display: flex;
@@ -866,7 +878,7 @@ a:hover {
 }
 #dataSheet > div div {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
 #dataSheet > div div.gridElement {
   display: grid;
@@ -940,9 +952,6 @@ a:hover {
 .h-\[3px\] {
   height: 3px;
 }
-.h-\[400px\] {
-  height: 400px;
-}
 .h-\[480px\] {
   height: 480px;
 }
@@ -985,20 +994,15 @@ a:hover {
 .gap-10 {
   gap: 2.5rem;
 }
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+.gap-x-0 {
+  -moz-column-gap: 0px;
+       column-gap: 0px;
 }
 .gap-y-5 {
   row-gap: 1.25rem;
 }
 .gap-y-7 {
   row-gap: 1.75rem;
-}
-.space-y-32 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(8rem * var(--tw-space-y-reverse));
 }
 .rounded-full {
   border-radius: 9999px;

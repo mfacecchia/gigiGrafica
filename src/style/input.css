@@ -30,7 +30,7 @@
         @apply w-full px-6 py-4 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0 z-50;
     }
     footer{
-        @apply w-full mt-36 px-6 pt-11 pb-3 box-border bg-black/80 flex flex-col items-center justify-center space-y-5 text-white;
+        @apply w-full mt-20 px-6 pt-11 pb-3 box-border bg-black/80 flex flex-col items-center justify-center space-y-5 text-white;
     }
     nav img, footer img{
         @apply h-11 w-auto;
@@ -130,10 +130,16 @@
         @apply size-5;
     }
     .project-header{
-        @apply w-full h-[400px] relative;
+        @apply w-full h-auto relative;
+    }
+    .project-header section{
+        @apply w-full p-0;
     }
     .project-header img{
         @apply hidden;
+    }
+    .project-header section img{
+        @apply block;
     }
     .project-header > div{
         @apply h-56 p-11 box-border bg-[#a4a5a5];
@@ -170,14 +176,17 @@
         @apply -rotate-90 ml-auto w-11;
         @apply hover:animate-pulse;
     }
+    #dataSheet{
+        @apply space-y-20
+    }
     #dataSheet > div{
-        @apply space-y-5;
+        @apply space-y-0;
     }
     #dataSheet > div header{
         @apply flex flex-col items-end;
     }
     #dataSheet > div div{
-        @apply flex gap-10;
+        @apply flex gap-5;
     }
     #dataSheet > div div.gridElement{
         @apply grid grid-cols-3 gap-5;
