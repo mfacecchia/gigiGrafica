@@ -809,6 +809,7 @@ a:hover {
 .project-header > div{
         height: calc(100vh - 240px);
         box-sizing: border-box;
+        min-height: 24rem;
         overflow: hidden;
         --tw-bg-opacity: 1;
         background-color: rgb(164 165 165 / var(--tw-bg-opacity));
@@ -817,6 +818,7 @@ a:hover {
 
   .project-header > div {
     height: 14rem;
+    min-height: 14rem;
   }
 }
 .project-header h1 {
