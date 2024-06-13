@@ -834,6 +834,12 @@ a:hover {
   justify-content: center;
   gap: 2.75rem;
 }
+@media (min-width: 640px) {
+
+  .projects-grid {
+    width: 75%;
+  }
+}
 .projects-grid article {
   display: flex;
   flex-direction: column;
@@ -841,10 +847,17 @@ a:hover {
   justify-content: space-between;
   gap: 0.75rem;
 }
-/* TODO: Apply for desktop */
-/* .projects-grid article:nth-child(even){
-        @apply flex-row-reverse;
-    } */
+@media (min-width: 640px) {
+
+  .projects-grid article {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .projects-grid article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
 .projects-grid article p {
   line-height: 1.25;
   --tw-text-opacity: 1;

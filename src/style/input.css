@@ -155,14 +155,15 @@
     }
     .projects-grid{
         @apply w-4/5 grid grid-cols-1 justify-center gap-11;
+        @apply sm:w-3/4
     }
     .projects-grid article{
         @apply flex flex-col gap-3 justify-between items-center;
+        @apply sm:flex-row sm:gap-5;
     }
-    /* TODO: Apply for desktop */
-    /* .projects-grid article:nth-child(even){
-        @apply flex-row-reverse;
-    } */
+    .projects-grid article:nth-child(even){
+        @apply sm:flex-row-reverse;
+    }
     .projects-grid article p{
         @apply text-slate-600 leading-tight;
     }
