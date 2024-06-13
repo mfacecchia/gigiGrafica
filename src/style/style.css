@@ -415,6 +415,9 @@ video {
   font-weight: 700;
 }
     a {
+  font-weight: 500;
+}
+    b {
   font-weight: 600;
 }
     nav {
@@ -428,10 +431,10 @@ video {
   align-items: center;
   justify-content: flex-start;
   background-color: rgb(0 0 0 / 0.8);
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -452,8 +455,8 @@ video {
 }
     footer {
   background-color: rgb(0 0 0 / 0.8);
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 2.75rem;
   padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
@@ -474,16 +477,16 @@ video {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  width: 50%;
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+  width: 80%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
     ul li {
   list-style-type: disc;
 }
     hr {
-  margin-top: 14rem;
-  margin-bottom: 14rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   margin-left: 2.75rem;
   margin-right: 2.75rem;
   box-sizing: border-box;
@@ -501,20 +504,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1000ms;
 }
-    .\!fade {
-  --tw-translate-y: 8rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 0;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
-}
     .fade.active {
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 1;
-}
-    .\!fade.active {
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 1;
@@ -656,6 +646,18 @@ a:hover {
 .sectionLink img {
   height: 1.25rem;
 }
+#pageLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+#personalInfo {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2.75rem;
+}
 #personalInfo > div > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -666,6 +668,11 @@ a:hover {
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+#personalInfo article ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 #personalInfo div p {
   text-align: justify;
   line-height: 1.25;
@@ -674,6 +681,11 @@ a:hover {
   margin-top: 0px;
   width: 1.5rem;
   height: 1.5rem;
+}
+#software {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 #software div {
   display: flex;
@@ -712,8 +724,8 @@ a:hover {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 .project h1 {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .project article {
   margin-top: 2.75rem;
@@ -728,6 +740,7 @@ a:hover {
   box-sizing: border-box;
   display: flex;
   height: 20rem;
+  width: 100%;
   justify-content: space-between;
   border-radius: 1rem;
   background-size: cover;
@@ -909,9 +922,6 @@ a:hover {
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
-}
 .h-32 {
   height: 8rem;
 }
@@ -930,9 +940,6 @@ a:hover {
 .h-\[480px\] {
   height: 480px;
 }
-.h-auto {
-  height: auto;
-}
 .h-screen {
   height: 100vh;
 }
@@ -941,9 +948,6 @@ a:hover {
 }
 .w-1\/3 {
   width: 33.333333%;
-}
-.w-11\/12 {
-  width: 91.666667%;
 }
 .w-16 {
   width: 4rem;
@@ -960,9 +964,6 @@ a:hover {
 .w-full {
   width: 100%;
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .\!grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
@@ -977,12 +978,6 @@ a:hover {
 }
 .gap-10 {
   gap: 2.5rem;
-}
-.gap-5 {
-  gap: 1.25rem;
-}
-.gap-7 {
-  gap: 1.75rem;
 }
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
@@ -1067,7 +1062,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1080,7 +1074,6 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
