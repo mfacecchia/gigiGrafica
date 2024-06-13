@@ -806,19 +806,20 @@ a:hover {
   width: 100%;
   padding: 0px;
 }
-.project-header img {
+.project-header :is(img, svg) {
   display: none;
 }
 .project-header section img {
   display: block;
 }
-.project-header > div {
-  box-sizing: border-box;
-  height: 14rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(164 165 165 / var(--tw-bg-opacity));
-  padding: 2.75rem;
-}
+.project-header > div{
+        height: calc(100vh - 240px);
+        box-sizing: border-box;
+        overflow: hidden;
+        --tw-bg-opacity: 1;
+        background-color: rgb(164 165 165 / var(--tw-bg-opacity));
+        padding: 2.75rem;
+    }
 .project-header h1 {
   display: inline-block;
   --tw-bg-opacity: 1;
@@ -936,6 +937,9 @@ a:hover {
 .relative {
   position: relative;
 }
+.-right-1\/2 {
+  right: -50%;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -985,17 +989,20 @@ a:hover {
 .mt-24 {
   margin-top: 6rem;
 }
+.\!block {
+  display: block !important;
+}
 .flex {
   display: flex;
+}
+.h-1\/2 {
+  height: 50%;
 }
 .h-32 {
   height: 8rem;
 }
-.h-6 {
-  height: 1.5rem;
-}
-.h-72 {
-  height: 18rem;
+.h-8 {
+  height: 2rem;
 }
 .h-\[3px\] {
   height: 3px;

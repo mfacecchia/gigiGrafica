@@ -139,14 +139,15 @@
     .project-header section{
         @apply w-full p-0;
     }
-    .project-header img{
+    .project-header :is(img, svg){
         @apply hidden;
     }
     .project-header section img{
         @apply block;
     }
     .project-header > div{
-        @apply h-56 p-11 box-border bg-[#a4a5a5];
+        height: calc(100vh - 240px);
+        @apply p-11 box-border bg-[#a4a5a5] overflow-hidden;
     }
     .project-header h1{
         @apply text-4xl inline-block pr-3 bg-[#313131] text-white;
