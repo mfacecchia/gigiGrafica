@@ -24,8 +24,9 @@
     a{
         @apply font-medium;
     }
-    b{
+    b, h1{
         @apply font-semibold;
+        @apply md:font-bold;
     }
     nav{
         @apply w-full px-6 py-4 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0 z-50;

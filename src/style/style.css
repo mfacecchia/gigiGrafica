@@ -423,8 +423,14 @@ video {
     a {
   font-weight: 500;
 }
-    b {
+    b, h1 {
   font-weight: 600;
+}
+    @media (min-width: 768px) {
+
+  b, h1 {
+    font-weight: 700;
+  }
 }
     nav {
   position: fixed;
@@ -1114,7 +1120,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1127,7 +1132,6 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
