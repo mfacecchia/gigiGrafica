@@ -4,9 +4,27 @@
 
 @layer base{
     @font-face {
-        font-family: 'LeagueSpartan';
-        src: url('../assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
+        font-family: 'Mluvka';
+        src: url('../assets/fonts/Mluvka-Regular.otf');
         font-display: swap;
+    }
+    @font-face {
+        font-family: 'Mluvka';
+        src: url('../assets/fonts/Mluvka-SemiBold.otf');
+        font-display: swap;
+        font-weight: 600
+    }
+    @font-face {
+        font-family: 'Mluvka';
+        src: url('../assets/fonts/Mluvka-Bold.otf');
+        font-display: swap;
+        font-weight: 700
+    }
+    @font-face {
+        font-family: 'Mluvka';
+        src: url('../assets/fonts/Mluvka-Italic.otf');
+        font-display: swap;
+        font-style: italic;
     }
     *{
         @apply scroll-smooth;
@@ -15,15 +33,12 @@
         @apply bg-gray-100 pt-28;
     }
     h1, p, b, a, li{
-        font-family: 'LeagueSpartan'
+        font-family: 'Mluvka'
     }
     h1{
         @apply font-bold text-2xl;
     }
-    a{
-        @apply font-medium;
-    }
-    b, h1{
+    a, b, h1{
         @apply font-semibold;
         @apply md:font-bold;
     }
