@@ -1479,6 +1479,10 @@ a:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(87 62 29 / var(--tw-text-opacity)) !important;
 }
+.text-\[\#152E60\] {
+  --tw-text-opacity: 1;
+  color: rgb(21 46 96 / var(--tw-text-opacity));
+}
 
 @keyframes bounce {
 
