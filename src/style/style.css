@@ -1009,6 +1009,9 @@ a:hover {
 .mt-24 {
   margin-top: 6rem;
 }
+.mt-52 {
+  margin-top: 13rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -1118,8 +1121,14 @@ a:hover {
 .items-start {
   align-items: flex-start;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-end {
   justify-content: flex-end;
@@ -1165,9 +1174,6 @@ a:hover {
 .rounded-full {
   border-radius: 9999px;
 }
-.border {
-  border-width: 1px;
-}
 .\!bg-\[\#858FDA\] {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(133 143 218 / var(--tw-bg-opacity)) !important;
@@ -1179,10 +1185,6 @@ a:hover {
 .\!bg-transparent {
   background-color: transparent !important;
 }
-.bg-\[\#3a0c09\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(58 12 9 / var(--tw-bg-opacity));
-}
 .bg-\[\#E9CECE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 206 206 / var(--tw-bg-opacity));
@@ -1190,6 +1192,18 @@ a:hover {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.bg-nicosVape_blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 55 112 / var(--tw-bg-opacity));
+}
+.bg-nicosVape_blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 29 53 / var(--tw-bg-opacity));
+}
+.bg-nutella_brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 12 9 / var(--tw-bg-opacity));
 }
 .bg-slate-200 {
   --tw-bg-opacity: 1;
@@ -1214,6 +1228,9 @@ a:hover {
 .bg-\[url\(\'\.\.\/assets\/icons\/websitesMobile\.svg\'\)\] {
   background-image: url('../assets/icons/websitesMobile.svg');
 }
+.fill-\[\#EB6E14\] {
+  fill: #EB6E14;
+}
 .fill-graphicode_purple {
   fill: #442561;
 }
@@ -1237,6 +1254,9 @@ a:hover {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.pt-16 {
+  padding-top: 4rem;
 }
 .text-center {
   text-align: center;
@@ -1282,7 +1302,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1295,11 +1314,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -1314,7 +1331,6 @@ a:hover {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:w-1\/2 {
