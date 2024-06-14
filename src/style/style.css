@@ -1276,6 +1276,15 @@ a:hover {
 .fill-ideaVerde_green-700 {
   fill: #0A5E34;
 }
+.fill-\[\] {
+  fill: ;
+}
+.fill-\[\#black\/80\] {
+  fill: #black/80;
+}
+.fill-black\/80 {
+  fill: rgb(0 0 0 / 0.8);
+}
 .p-2 {
   padding: 0.5rem;
 }
