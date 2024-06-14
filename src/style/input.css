@@ -213,4 +213,10 @@
     #dataSheet > div div.gridElement{
         @apply grid gap-5;
     }
+    #photosEventsSelection{
+        @apply space-y-3
+    }
+    #photosEventsSelection div{
+        @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
+    }
 }
