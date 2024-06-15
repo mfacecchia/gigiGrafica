@@ -424,7 +424,7 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-top: 7rem;
 }
-    h1, p, b, a, li{
+    h1, p, b, a, li, sub{
         font-family: 'Mluvka'
     }
     h1 {
@@ -1505,6 +1505,7 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1517,9 +1518,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -1534,6 +1537,7 @@ a:hover {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:w-1\/2 {
