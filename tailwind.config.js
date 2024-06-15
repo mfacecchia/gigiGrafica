@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'graphicode_purple': '#442561',
+        'graphicode_purple': {
+          500: '#E9D0D5',
+          700: '#644C80',
+          900: '#442561'
+        },
         'photos_brown': '#302A26',
         'nutella_brown': '#3A0C09',
         'nicosVape_blue': {
