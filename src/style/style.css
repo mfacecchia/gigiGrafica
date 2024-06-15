@@ -1115,6 +1115,19 @@ a:hover {
   justify-content: center;
   overflow: visible;
 }
+#graphicodeContacts > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+#graphicodeContacts > div a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#graphicodeContacts > div a img {
+  height: 1.25rem;
+}
 .absolute {
   position: absolute;
 }
@@ -1166,6 +1179,9 @@ a:hover {
 }
 .mb-11 {
   margin-bottom: 2.75rem;
+}
+.mb-56 {
+  margin-bottom: 14rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -1337,6 +1353,11 @@ a:hover {
 .gap-y-7 {
   row-gap: 1.75rem;
 }
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1394,6 +1415,13 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(233 206 206 / var(--tw-bg-opacity));
 }
+.bg-graphicode_purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 208 213 / var(--tw-bg-opacity));
+}
+.bg-graphicode_purple-700\/80 {
+  background-color: rgb(100 76 128 / 0.8);
+}
 .bg-ideaVerde_green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(10 94 52 / var(--tw-bg-opacity));
@@ -1442,9 +1470,6 @@ a:hover {
 }
 .fill-black\/80 {
   fill: rgb(0 0 0 / 0.8);
-}
-.fill-graphicode_purple {
-  fill: #442561;
 }
 .fill-ideaVerde_green-700 {
   fill: #0A5E34;
@@ -1501,7 +1526,7 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-graphicode_purple {
+.text-graphicode_purple-900 {
   --tw-text-opacity: 1;
   color: rgb(68 37 97 / var(--tw-text-opacity));
 }

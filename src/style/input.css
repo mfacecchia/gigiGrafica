@@ -261,4 +261,13 @@
     .websiteFigures figure.square{
         @apply w-auto h-full aspect-square flex items-center justify-center overflow-visible;
     }
+    #graphicodeContacts{
+        @apply space-y-3;
+    }
+    #graphicodeContacts > div a{
+        @apply flex items-center gap-2;
+    }
+    #graphicodeContacts > div a img{
+        @apply h-5;
+    }
 }
