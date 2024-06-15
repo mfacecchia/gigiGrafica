@@ -210,6 +210,9 @@
         @apply flex flex-col gap-5;
         @apply md:flex-row;
     }
+    #dataSheet .logoColorTest{
+        @apply w-full flex-col gap-y-5 md:w-1/2;
+    }
     #dataSheet > div div.gridElement{
         @apply grid gap-5;
     }

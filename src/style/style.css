@@ -974,6 +974,17 @@ a:hover {
     flex-direction: row;
   }
 }
+#dataSheet .logoColorTest {
+  width: 100%;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+@media (min-width: 768px) {
+
+  #dataSheet .logoColorTest {
+    width: 50%;
+  }
+}
 #dataSheet > div div.gridElement {
   display: grid;
   gap: 1.25rem;
@@ -1323,9 +1334,6 @@ a:hover {
   -moz-column-gap: 0px;
        column-gap: 0px;
 }
-.gap-y-5 {
-  row-gap: 1.25rem;
-}
 .gap-y-7 {
   row-gap: 1.75rem;
 }
@@ -1535,12 +1543,5 @@ a:hover {
 
   .sm\:hidden {
     display: none;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 }
