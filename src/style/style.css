@@ -1020,6 +1020,90 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.websiteContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.websiteContainer:nth-of-type(n + 2) {
+  margin-top: 13rem;
+}
+.websiteContainer article {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.websiteContainer .websiteInformationContainer {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+}
+.websiteContainer article > figure {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  overflow: visible;
+  border-radius: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.websiteInformationContainer header {
+  box-sizing: border-box;
+  display: flex;
+  height: 33.333333%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.websiteInformationContainer main {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+.websiteInformationContainer .websiteFigures {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  border-radius: 1.5rem;
+}
+.websiteFigures figure {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.websiteFigures figure.square {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
 .absolute {
   position: absolute;
 }
@@ -1090,9 +1174,6 @@ a:hover {
 .mt-24 {
   margin-top: 6rem;
 }
-.mt-52 {
-  margin-top: 13rem;
-}
 .mt-\[15\%\] {
   margin-top: 15%;
 }
@@ -1117,17 +1198,8 @@ a:hover {
 .hidden {
   display: none;
 }
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .h-1\/2 {
   height: 50%;
-}
-.h-1\/3 {
-  height: 33.333333%;
-}
-.h-2\/5 {
-  height: 40%;
 }
 .h-3\/5 {
   height: 60%;
@@ -1140,9 +1212,6 @@ a:hover {
 }
 .h-\[3px\] {
   height: 3px;
-}
-.h-\[400px\] {
-  height: 400px;
 }
 .h-\[480px\] {
   height: 480px;
@@ -1250,16 +1319,9 @@ a:hover {
 .gap-10 {
   gap: 2.5rem;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
-}
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
 }
 .gap-y-5 {
   row-gap: 1.25rem;
@@ -1272,9 +1334,6 @@ a:hover {
 }
 .\!overflow-visible {
   overflow: visible !important;
-}
-.overflow-visible {
-  overflow: visible;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
@@ -1326,10 +1385,6 @@ a:hover {
 .bg-\[\#E9CECE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 206 206 / var(--tw-bg-opacity));
-}
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 .bg-ideaVerde_green-700 {
   --tw-bg-opacity: 1;
@@ -1389,23 +1444,11 @@ a:hover {
 .fill-photos_brown {
   fill: #302A26;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-7 {
   padding: 1.75rem;
 }
-.\!px-0 {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.\!pb-0 {
+  padding-bottom: 0px !important;
 }
 .pt-16 {
   padding-top: 4rem;
@@ -1423,10 +1466,6 @@ a:hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .font-light {
   font-weight: 300;
@@ -1466,7 +1505,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1479,11 +1517,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -1498,7 +1534,6 @@ a:hover {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:w-1\/2 {
