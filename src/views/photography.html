@@ -31,25 +31,40 @@
         </header>
 
         <section id = "photosEventsSelection">
-            <div class = "bg-[#573E1D]">
+            <div class = "bg-[#573E1D]" id = "garaDelCuoco">
                 <b>Evento</b>
                 <b>Gara del cuoco</b>
             </div>
-            <div class = "bg-[#6B542F]">
+            <div class = "bg-[#6B542F]" id = "festaDellAlbero">
                 <b>Evento</b>
                 <b>Festa dell'albero</b>
             </div>
-            <div class = "bg-[#AF9660]">
+            <div class = "bg-[#AF9660]" id = "peppeZullo">
                 <b>Visita</b>
                 <b>Peppe Zullo</b>
             </div>
-            <div class = "bg-[#DFC696]">
+            <div class = "bg-[#DFC696]" id = "salineMargherita">
                 <b>Visita</b>
                 <b>Saline Margherita di Savoia</b>
             </div>
-            <div class = "bg-[#313131] items-center">
+            <div class = "bg-[#313131] items-center" id = "vari">
                 <b>Vari</b>
             </div>
+        </section>
+
+        <section id = "event">
+            <header>
+                <h1>Evento Gara del cuoco</h1>
+                <p>
+                    Lavori 2022/2023 foto evento<br>
+                    2a Edizione la gara del cuoco<br>
+                    I.I.S.S Einaudi FG
+                </p>
+            </header>
+            <div id = "photos">
+                
+            </div>
+            <sub id = "camera">Shot on <span id = "cameraName"></span></sub>
         </section>
 
         <section class = "my-20">
@@ -57,7 +72,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.62 22.62"><defs></defs><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path class="fill-black/80" d="M11.31,0A11.31,11.31,0,1,0,22.62,11.31,11.31,11.31,0,0,0,11.31,0Zm7.85,11.25a1.22,1.22,0,0,1-.13.47,1.16,1.16,0,0,1-.29.37l-6.65,5.69a1.21,1.21,0,0,1-1.7-.13,1.21,1.21,0,0,1,.13-1.7l4.18-3.57h-10a1.2,1.2,0,1,1,0-2.4h9.91l-4-3.29A1.2,1.2,0,0,1,10.37,5a1.22,1.22,0,0,1,1.7-.17l6.62,5.39a1.23,1.23,0,0,1,.47,1Z"/></g></g></svg>
             </div>
         </section>
-        
+
         <hr class = "mb-0">
 
         <footer>
@@ -83,5 +98,10 @@
             </section>
         </footer>
 
+        <script src = "../script/eventPhotographiesSelector.js"></script>
         <script src = "../script/script.js"></script>
-    </b
+        <script>
+            updateEventSection('garaDelCuoco');
+        </script>
+    </body>
+</html>

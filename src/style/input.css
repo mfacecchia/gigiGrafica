@@ -219,4 +219,13 @@
     #photosEventsSelection div{
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
     }
+    #event{
+        @apply mt-52 space-y-3;
+    }
+    #event #photos{
+        @apply w-full h-96 rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg;
+    }
+    #event #photos img{
+        @apply w-full h-full object-cover snap-start;
+    }
 }
