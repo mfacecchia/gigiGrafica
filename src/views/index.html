@@ -7,6 +7,7 @@
 
         <link rel = "icon" href = "../assets/icons/favicon.svg">
         <link rel = "stylesheet" href = "../style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <title>Gigi Grafica - Home</title>
     </head>
@@ -22,6 +23,7 @@
             <img class = "h-32 w-auto" src = "../assets/icons/logo_large.svg" alt = "Logo Gigi">
             <div id = "pageLinks">
                 <a href = "#portfolio" class = "sectionLink" title = "Vai al Portfolio"><img src = "../assets/icons/arrow.svg" alt = "Link a Portfolio">Portfolio</a>
+                <a href = "#certificates" class = "sectionLink" title = "Vai al Portfolio"><img src = "../assets/icons/arrow.svg" alt = "Link a Attestati">Attestati</a>
             </div>
         </section>
 
@@ -131,6 +133,20 @@
                 </a>
             </article>
         </section>
+
+        <section class = "fade" id = 'certificates'>
+            <header>
+                <h1>Attestati</h1>
+                <p>Attestati anni 2022/2024</p>
+            </header>
+            <div class = "certificatesSlider">
+                <div class = "glide__track" data-glide-el = "track">
+                    <ul class = "glide__slides">
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
         
         <footer>
             <section>
@@ -155,6 +171,11 @@
             </section>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src = "../script/script.js"></script>
+        <script src = "../script/slider.js"></script>
+        <script>
+            setSliderElements();
+        </script>
     </body>
 </html>
