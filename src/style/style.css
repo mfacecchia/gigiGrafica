@@ -1359,6 +1359,12 @@ a:hover {
 .min-h-60 {
   min-height: 15rem;
 }
+.min-h-5 {
+  min-height: 1.25rem;
+}
+.min-h-56 {
+  min-height: 14rem;
+}
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1558,14 +1564,14 @@ a:hover {
 .bg-\[url\(\'\.\.\/assets\/icons\/graphicodeMobile\.svg\'\)\] {
   background-image: url('../assets/icons/graphicodeMobile.svg');
 }
-.bg-\[url\(\'\.\.\/assets\/icons\/manifesti\.svg\'\)\] {
-  background-image: url('../assets/icons/manifesti.svg');
+.bg-\[url\(\'\.\.\/assets\/icons\/manifesti\.jpeg\'\)\] {
+  background-image: url('../assets/icons/manifesti.jpeg');
 }
-.bg-\[url\(\'\.\.\/assets\/icons\/photos\.svg\'\)\] {
-  background-image: url('../assets/icons/photos.svg');
+.bg-\[url\(\'\.\.\/assets\/icons\/photos\.jpeg\'\)\] {
+  background-image: url('../assets/icons/photos.jpeg');
 }
-.bg-\[url\(\'\.\.\/assets\/icons\/websitesMobile\.svg\'\)\] {
-  background-image: url('../assets/icons/websitesMobile.svg');
+.bg-\[url\(\'\.\.\/assets\/icons\/websitesMobile\.jpeg\'\)\] {
+  background-image: url('../assets/icons/websitesMobile.jpeg');
 }
 .from-slate-400 {
   --tw-gradient-from: #94a3b8 var(--tw-gradient-from-position);
@@ -1662,6 +1668,7 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1674,9 +1681,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:block {
