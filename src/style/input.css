@@ -272,11 +272,44 @@
     #graphicodeContacts > div a img{
         @apply h-5;
     }
+    #messages{
+        @apply px-0 flex flex-col items-center gap-y-11 mb-40
+    }
+    #messages article{
+        @apply w-full min-w-[300px] flex flex-col gap-x-2;
+    }
+    #messages article .messageSticker img{
+        @apply h-32 ml-4;
+    }
+    #messages .messageSender{
+        @apply justify-self-end items-end;
+    }
+    #messages .messageContent{
+        @apply w-11/12 flex gap-x-1;
+    }
+    #messages .messageContent .contactIcon{
+        @apply w-9 aspect-square rounded-full bg-gradient-to-b overflow-hidden flex items-end justify-center;
+    }
+    #messages .messageContent .contactIcon img{
+        @apply w-11/12;
+    }
+    #messages .messageContent .messageBubble{
+        @apply flex items-center justify-start w-full box-border px-3 text-white text-xs relative;
+    }
+    #messages .messageSender .messageContent{
+        @apply w-3/4;
+    }
+    #messages .messageSender .messageContent .messageBubble{
+        @apply justify-end;
+    }
+    #messages .messageContent .messageBubble :is(svg, img){
+        @apply w-full;
+    }
 }
 
 @layer components{
     .glide__track{
-        @apply rounded-xl overflow-hidden shadow-xl;
+        @apply rounded-xl overflow-hidden shadow-lg;
     }
     .glide__slide{
         @apply list-none;

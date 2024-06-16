@@ -1131,11 +1131,78 @@ a:hover {
 #graphicodeContacts > div a img {
   height: 1.25rem;
 }
+#messages {
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.75rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#messages article {
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  flex-direction: column;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+#messages article .messageSticker img {
+  margin-left: 1rem;
+  height: 8rem;
+}
+#messages .messageSender {
+  align-items: flex-end;
+  justify-self: end;
+}
+#messages .messageContent {
+  display: flex;
+  width: 91.666667%;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+#messages .messageContent .contactIcon {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  width: 2.25rem;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+#messages .messageContent .contactIcon img {
+  width: 91.666667%;
+}
+#messages .messageContent .messageBubble {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+#messages .messageSender .messageContent {
+  width: 75%;
+}
+#messages .messageSender .messageContent .messageBubble {
+  justify-content: flex-end;
+}
+#messages .messageContent .messageBubble :is(svg, img) {
+  width: 100%;
+}
 .glide__track {
   overflow: hidden;
   border-radius: 0.75rem;
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .glide__slide {
@@ -1173,8 +1240,14 @@ a:hover {
 .top-0 {
   top: 0px;
 }
+.top-1\/2 {
+  top: 50%;
+}
 .top-4 {
   top: 1rem;
+}
+.z-10 {
+  z-index: 10;
 }
 .mx-0 {
   margin-left: 0px;
@@ -1243,6 +1316,9 @@ a:hover {
 .hidden {
   display: none;
 }
+.\!h-32 {
+  height: 8rem !important;
+}
 .h-1\/2 {
   height: 50%;
 }
@@ -1266,6 +1342,9 @@ a:hover {
 }
 .h-screen {
   height: 100vh;
+}
+.\!h-40 {
+  height: 10rem !important;
 }
 .max-h-72 {
   max-height: 18rem;
@@ -1314,6 +1393,10 @@ a:hover {
 }
 .max-w-none {
   max-width: none;
+}
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .translate-x-11 {
   --tw-translate-x: 2.75rem;
@@ -1483,11 +1566,33 @@ a:hover {
 .bg-\[url\(\'\.\.\/assets\/icons\/websitesMobile\.svg\'\)\] {
   background-image: url('../assets/icons/websitesMobile.svg');
 }
+.from-slate-400 {
+  --tw-gradient-from: #94a3b8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(148 163 184 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-yellow-200 {
+  --tw-gradient-from: #fef08a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 240 138 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-slate-600 {
+  --tw-gradient-to: #475569 var(--tw-gradient-to-position);
+}
+.to-yellow-300 {
+  --tw-gradient-to: #fde047 var(--tw-gradient-to-position);
+}
 .fill-\[\#EB6E14\] {
   fill: #EB6E14;
 }
 .fill-black\/80 {
   fill: rgb(0 0 0 / 0.8);
+}
+.fill-graphicode_purple-700 {
+  fill: #644C80;
+}
+.fill-graphicode_purple-900 {
+  fill: #442561;
 }
 .fill-ideaVerde_green-700 {
   fill: #0A5E34;
@@ -1556,6 +1661,7 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1568,9 +1674,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:block {
