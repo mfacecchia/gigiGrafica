@@ -799,7 +799,8 @@ a:hover {
 .project article a {
   box-sizing: border-box;
   display: flex;
-  height: 20rem;
+  aspect-ratio: 9/12;
+  min-height: 20rem;
   width: 100%;
   justify-content: space-between;
   border-radius: 1rem;
@@ -821,10 +822,13 @@ a:hover {
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.project article a main {
+  width: 75%;
+}
 .project article a main > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 .project article a main {
   line-height: 1.25;
@@ -1316,8 +1320,8 @@ a:hover {
 .hidden {
   display: none;
 }
-.\!h-32 {
-  height: 8rem !important;
+.\!h-40 {
+  height: 10rem !important;
 }
 .h-1\/2 {
   height: 50%;
@@ -1342,9 +1346,6 @@ a:hover {
 }
 .h-screen {
   height: 100vh;
-}
-.\!h-40 {
-  height: 10rem !important;
 }
 .max-h-72 {
   max-height: 18rem;
@@ -1661,7 +1662,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1674,11 +1674,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:block {
