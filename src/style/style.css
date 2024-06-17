@@ -1827,6 +1827,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1839,9 +1840,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -1909,6 +1912,7 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:block {
@@ -1919,9 +1923,38 @@ a:hover {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-3\/4 {
+    height: 75%;
+  }
+
+  .lg\:h-3\/5 {
+    height: 60%;
+  }
+
+  .lg\:h-4\/5 {
+    height: 80%;
+  }
+
+  .lg\:max-h-80 {
+    max-height: 20rem;
   }
 }
