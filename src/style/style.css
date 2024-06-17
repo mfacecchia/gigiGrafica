@@ -998,6 +998,13 @@ a:hover {
   margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5rem * var(--tw-space-y-reverse));
 }
+@media (min-width: 1024px) {
+
+  #dataSheet {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 #dataSheet > div > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1854,7 +1861,6 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1867,11 +1873,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -1939,7 +1943,6 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -1950,7 +1953,6 @@ a:hover {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:right-0 {

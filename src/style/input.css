@@ -209,7 +209,8 @@
         @apply hover:animate-pulse;
     }
     #dataSheet{
-        @apply space-y-20
+        @apply space-y-20;
+        @apply lg:px-20;
     }
     #dataSheet > div{
         @apply space-y-5;
