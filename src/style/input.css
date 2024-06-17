@@ -44,6 +44,7 @@
     }
     nav{
         @apply w-full px-6 py-4 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0 z-50;
+        @apply xl:px-11;
     }
     footer{
         @apply w-full mt-20 px-6 pt-11 pb-3 box-border bg-black/80 flex flex-col items-center justify-center space-y-5 text-white;
@@ -92,23 +93,22 @@
         @apply h-auto grid grid-cols-1 gap-11;
         @apply sm:grid-cols-2;
     }
-    #personalInfo > div{
-        @apply space-y-8
-    }
     #personalInfo article{
         @apply space-y-2
     }
     #personalInfo article ul{
         @apply grid grid-cols-1 w-full;
+        @apply lg:grid-cols-2;
     }
-    #personalInfo div p{
+    #personalInfo p{
         @apply text-justify leading-tight;
     }
-    #personalInfo div img{
+    #personalInfo img{
         @apply size-6 mt-0;
     }
     #software{
         @apply grid grid-cols-1 gap-5;
+        @apply lg:grid-cols-2;
     }
     #software div{
         @apply flex gap-x-2 justify-start items-center;
@@ -141,6 +141,7 @@
         @apply bg-cover bg-center rounded-2xl w-full min-h-80 box-border p-4 shadow-lg flex justify-between transition-all duration-150 aspect-[9/12];
         @apply hover:scale-[102%] hover:shadow-2xl;
         @apply sm:aspect-auto sm:min-h-72;
+        @apply xl:min-h-96;
     }
     .project article a main{
         @apply w-3/4 space-y-2 leading-tight;
