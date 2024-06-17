@@ -303,10 +303,13 @@
     }
     #messages .messageContent{
         @apply w-11/12 flex gap-x-1;
-        @apply sm:w-3/5;
+        @apply sm:w-4/6;
+        @apply md:w-3/5;
     }
     #messages .messageContent .contactIcon{
         @apply w-9 aspect-square rounded-full bg-gradient-to-b overflow-hidden flex items-end justify-center;
+        @apply sm:w-10;
+        @apply md:w-11;
     }
     #messages .messageContent .contactIcon img{
         @apply w-11/12;
@@ -318,6 +321,7 @@
     #messages .messageSender .messageContent{
         @apply w-3/4;
         @apply sm:w-3/5;
+        @apply md:w-[55%];
     }
     #messages .messageSender .messageContent .messageBubble{
         @apply justify-end;

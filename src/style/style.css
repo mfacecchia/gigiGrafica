@@ -1244,6 +1244,12 @@ a:hover {
 @media (min-width: 640px) {
 
   #messages .messageContent {
+    width: 66.666667%;
+  }
+}
+@media (min-width: 768px) {
+
+  #messages .messageContent {
     width: 60%;
   }
 }
@@ -1256,6 +1262,18 @@ a:hover {
   overflow: hidden;
   border-radius: 9999px;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+@media (min-width: 640px) {
+
+  #messages .messageContent .contactIcon {
+    width: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  #messages .messageContent .contactIcon {
+    width: 2.75rem;
+  }
 }
 #messages .messageContent .contactIcon img {
   width: 91.666667%;
@@ -1290,6 +1308,12 @@ a:hover {
 
   #messages .messageSender .messageContent {
     width: 60%;
+  }
+}
+@media (min-width: 768px) {
+
+  #messages .messageSender .messageContent {
+    width: 55%;
   }
 }
 #messages .messageSender .messageContent .messageBubble {
