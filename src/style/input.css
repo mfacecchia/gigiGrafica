@@ -153,6 +153,7 @@
     }
     #certificates .certificatesSlider{
         @apply sm:w-1/2;
+        @apply lg:w-[47%];
     }
     .header{
         @apply w-full h-auto relative;

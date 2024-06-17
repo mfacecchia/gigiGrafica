@@ -863,6 +863,12 @@ a:hover {
     width: 50%;
   }
 }
+@media (min-width: 1024px) {
+
+  #certificates .certificatesSlider {
+    width: 47%;
+  }
+}
 .header {
   position: relative;
   height: auto;
