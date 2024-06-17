@@ -1389,14 +1389,20 @@ a:hover {
 .w-\[110\%\] {
   width: 110%;
 }
-.w-\[130\%\] {
-  width: 130%;
-}
 .w-auto {
   width: auto;
 }
 .w-full {
   width: 100%;
+}
+.w-\[130\%\] {
+  width: 130%;
+}
+.w-\[120\%\] {
+  width: 120%;
+}
+.w-\[125\%\] {
+  width: 125%;
 }
 .max-w-none {
   max-width: none;
@@ -1415,6 +1421,14 @@ a:hover {
 }
 .translate-y-\[2\%\] {
   --tw-translate-y: 2%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-x-\[5\%\] {
+  --tw-translate-x: 5%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-\[1\%\] {
+  --tw-translate-y: 1%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-90 {
