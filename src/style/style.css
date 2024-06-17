@@ -822,6 +822,13 @@ a:hover {
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+@media (min-width: 640px) {
+
+  .project article a {
+    aspect-ratio: auto;
+    min-height: 18rem;
+  }
+}
 .project article a main {
   width: 75%;
 }
@@ -840,11 +847,21 @@ a:hover {
 #certificates {
   margin-top: 8rem;
   margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
 }
-#certificates > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.75rem * var(--tw-space-y-reverse));
+@media (min-width: 640px) {
+
+  #certificates {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #certificates .certificatesSlider {
+    width: 50%;
+  }
 }
 .header {
   position: relative;
@@ -1389,20 +1406,14 @@ a:hover {
 .w-\[110\%\] {
   width: 110%;
 }
+.w-\[125\%\] {
+  width: 125%;
+}
 .w-auto {
   width: auto;
 }
 .w-full {
   width: 100%;
-}
-.w-\[130\%\] {
-  width: 130%;
-}
-.w-\[120\%\] {
-  width: 120%;
-}
-.w-\[125\%\] {
-  width: 125%;
 }
 .max-w-none {
   max-width: none;
@@ -1415,20 +1426,8 @@ a:hover {
   --tw-translate-x: 2.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.translate-x-\[6\%\] {
-  --tw-translate-x: 6%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.translate-y-\[2\%\] {
-  --tw-translate-y: 2%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .translate-x-\[5\%\] {
   --tw-translate-x: 5%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.translate-y-\[1\%\] {
-  --tw-translate-y: 1%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-90 {
@@ -1682,7 +1681,13 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 @keyframes bounce {
 
   0%, 100% {
@@ -1695,11 +1700,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -1712,5 +1715,13 @@ a:hover {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:\!w-\[47\%\] {
+    width: 47% !important;
+  }
+
+  .sm\:bg-\[url\(\'\.\.\/assets\/icons\/websites\.jpeg\'\)\] {
+    background-image: url('../assets/icons/websites.jpeg');
   }
 }

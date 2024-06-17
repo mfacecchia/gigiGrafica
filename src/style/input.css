@@ -139,6 +139,7 @@
     .project article a{
         @apply bg-cover bg-center rounded-2xl w-full min-h-80 box-border p-4 shadow-lg flex justify-between transition-all duration-150 aspect-[9/12];
         @apply hover:scale-[102%] hover:shadow-2xl;
+        @apply sm:aspect-auto sm:min-h-72;
     }
     .project article a main{
         @apply w-3/4 space-y-2 leading-tight;
@@ -147,7 +148,11 @@
         @apply size-5;
     }
     #certificates{
-        @apply space-y-11 mt-32 mb-40;
+        @apply flex flex-col gap-11 mt-32 mb-40;
+        @apply sm:flex-row sm:items-center sm:justify-between;
+    }
+    #certificates .certificatesSlider{
+        @apply sm:w-1/2;
     }
     .header{
         @apply w-full h-auto relative;
