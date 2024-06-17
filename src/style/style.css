@@ -951,6 +951,12 @@ a:hover {
 .projects-grid article > * {
   width: 91.666667%;
 }
+@media (min-width: 640px) {
+
+  .projects-grid article > * {
+    width: 50%;
+  }
+}
 .projects-grid article img {
   border-radius: 0.75rem;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1688,6 +1694,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1700,9 +1707,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:block {
