@@ -231,6 +231,7 @@
     #photosEventsSelection{
         @apply space-y-3;
         @apply sm:w-1/2;
+        @apply md:space-y-6
     }
     #photosEventsSelection div{
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
