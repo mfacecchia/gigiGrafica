@@ -1320,6 +1320,9 @@ a:hover {
 .hidden {
   display: none;
 }
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
 .\!h-40 {
   height: 10rem !important;
 }
@@ -1355,12 +1358,6 @@ a:hover {
 }
 .min-h-52 {
   min-height: 13rem;
-}
-.min-h-60 {
-  min-height: 15rem;
-}
-.min-h-5 {
-  min-height: 1.25rem;
 }
 .min-h-56 {
   min-height: 14rem;
