@@ -247,12 +247,14 @@
     }
     .websiteContainer article{
         @apply w-full flex flex-col items-center justify-center gap-2;
+        @apply sm:flex-row;
     }
     .websiteContainer .websiteInformationContainer{
         @apply flex flex-col gap-2 w-full h-[400px] rounded-3xl;
     }
     .websiteContainer article > figure{
-        @apply w-full box-border py-16 rounded-3xl overflow-visible flex
+        @apply w-full box-border py-16 rounded-3xl overflow-visible flex;
+        @apply sm:h-[400px];
     }
     .websiteInformationContainer header{
         @apply w-full h-1/3 rounded-3xl text-white flex flex-col items-start justify-center box-border px-6 text-xl;
