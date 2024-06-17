@@ -1012,6 +1012,12 @@ a:hover {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+@media (min-width: 1280px) {
+
+  .projects-grid article img {
+    border-radius: 1rem;
+  }
+}
 .backToStartBtn {
   margin-left: auto;
   width: 2.75rem;
@@ -1919,7 +1925,6 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1932,11 +1937,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -2004,7 +2007,6 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2015,7 +2017,6 @@ a:hover {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:right-0 {
@@ -2075,7 +2076,6 @@ a:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:h-40 {
@@ -2084,10 +2084,6 @@ a:hover {
 
   .xl\:\!w-1\/3 {
     width: 33.333333% !important;
-  }
-
-  .xl\:\!w-3\/5 {
-    width: 60% !important;
   }
 
   .xl\:\!w-\[63\%\] {

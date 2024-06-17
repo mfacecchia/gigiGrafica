@@ -205,6 +205,7 @@
     }
     .projects-grid article img{
         @apply rounded-xl shadow-lg;
+        @apply xl:rounded-2xl;
     }
     .backToStartBtn{
         @apply -rotate-90 ml-auto w-11;
