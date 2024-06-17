@@ -1320,9 +1320,6 @@ a:hover {
 .hidden {
   display: none;
 }
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
 .\!h-40 {
   height: 10rem !important;
 }
@@ -1343,6 +1340,9 @@ a:hover {
 }
 .h-\[480px\] {
   height: 480px;
+}
+.h-auto {
+  height: auto;
 }
 .h-full {
   height: 100%;
@@ -1380,6 +1380,9 @@ a:hover {
 .w-4\/5 {
   width: 80%;
 }
+.w-4\/6 {
+  width: 66.666667%;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -1394,15 +1397,6 @@ a:hover {
 }
 .w-full {
   width: 100%;
-}
-.w-11\/12 {
-  width: 91.666667%;
-}
-.\!w-11\/12 {
-  width: 91.666667% !important;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .max-w-none {
   max-width: none;
@@ -1621,12 +1615,6 @@ a:hover {
 }
 .pt-16 {
   padding-top: 4rem;
-}
-.pr-6 {
-  padding-right: 1.5rem;
-}
-.pr-11 {
-  padding-right: 2.75rem;
 }
 .text-center {
   text-align: center;
