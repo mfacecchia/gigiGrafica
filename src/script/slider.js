@@ -1,20 +1,14 @@
 async function setSliderElements(){
     const slider = document.querySelector('.certificatesSlider .glide__slides');
-    let certificateExists = true;
-    for(let i = 1; certificateExists; i++){
-        // TODO: Move elements list finder functionality to an external function
-        const certificateURL = await fetch(`../assets/icons/certificates/certificate${i}.jpeg`);
-        if(!certificateURL.ok){
-            certificateExists = false;
-            break;
-        }
+    const certificates = await getAssetsList('../assets/icons/certificates/', 'certificate', 'jpeg');
+    certificates.forEach(certificateURL => {
         const sliderElement = document.createElement('li');
         sliderElement.classList.add('glide__slide');
         const image = document.createElement('img');
-        image.src = certificateURL.url;
+        image.src = certificateURL;
         sliderElement.appendChild(image);
         slider.appendChild(sliderElement);
-    }
+    });
     initSlider();
 }
 

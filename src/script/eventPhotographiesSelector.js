@@ -47,18 +47,12 @@ async function updateEventSection(eventID){
     photographiesSection.querySelector('header h1').textContent = selectedEvent.title;
     photographiesSection.querySelector('header p').innerHTML = selectedEvent.subtitle;
     photographiesSection.querySelector('#camera #cameraName').textContent = selectedEvent.camera;
-    // Removing all images from container
+    // Removing all images from container and adding the new event-related images
     photographiesContainer.textContent = '';
-    let imageExists = true;
-    for(let i = 1; imageExists; i++){
-        // Checking if the image actually exists before adding it
-        const imgURL = await fetch(`../assets/icons/events/${eventID}/${eventID + i}.jpeg`);
-        if(!imgURL.ok){
-            imageExists = false;
-            return;
-        }
+    const images = await getAssetsList(`../assets/icons/events/${eventID}/`, eventID, 'jpeg');
+    images.forEach(imageURL => {
         const img = document.createElement('img');
-        img.src = imgURL.url;
+        img.src = imageURL;
         photographiesContainer.appendChild(img);
-    }
+    });
 }
