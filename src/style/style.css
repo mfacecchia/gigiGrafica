@@ -1051,6 +1051,13 @@ a:hover {
     gap: 1.25rem;
   }
 }
+@media (min-width: 1024px) {
+
+  .photography {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 #photosEventsSelection > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1102,6 +1109,12 @@ a:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+@media (min-width: 1024px) {
+
+  #event #photos {
+    height: 450px;
+  }
 }
 #event #photos img {
   height: 100%;
@@ -1970,10 +1983,6 @@ a:hover {
 
   .lg\:max-w-\[28rem\] {
     max-width: 28rem;
-  }
-
-  .lg\:max-w-\[\] {
-    max-width: ;
   }
 
   .lg\:max-w-\[40rem\] {

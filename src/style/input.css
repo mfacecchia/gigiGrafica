@@ -230,11 +230,12 @@
     .photography{
         @apply px-0 flex flex-col items-center justify-center gap-y-52;
         @apply sm:flex-row sm:gap-5;
+        @apply lg:px-20;
     }
     #photosEventsSelection{
         @apply space-y-3;
         @apply sm:w-1/2;
-        @apply md:space-y-6
+        @apply md:space-y-6;
     }
     #photosEventsSelection div{
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
@@ -245,6 +246,7 @@
     }
     #event #photos{
         @apply w-full h-96 rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg;
+        @apply lg:h-[450px];
     }
     #event #photos img{
         @apply w-full h-full object-cover snap-start;
