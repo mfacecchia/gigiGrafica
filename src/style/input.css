@@ -224,14 +224,20 @@
     #dataSheet > div div.gridElement{
         @apply grid gap-5 w-full;
     }
+    .photography{
+        @apply px-0 flex flex-col items-center justify-center gap-y-52;
+        @apply sm:flex-row sm:gap-5;
+    }
     #photosEventsSelection{
-        @apply space-y-3
+        @apply space-y-3;
+        @apply sm:w-1/2;
     }
     #photosEventsSelection div{
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
     }
     #event{
-        @apply mt-52 space-y-3;
+        @apply space-y-3;
+        @apply sm:w-1/2;
     }
     #event #photos{
         @apply w-full h-96 rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg;
