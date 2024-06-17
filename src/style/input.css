@@ -57,7 +57,8 @@
     }
     section{
         @apply w-4/5 px-6 box-border mx-auto;
-        @apply px-11;
+        @apply lg:px-11;
+        @apply xl:px-20;
     }
     ul li{
         @apply list-disc;

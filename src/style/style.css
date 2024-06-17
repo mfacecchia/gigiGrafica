@@ -506,8 +506,22 @@ video {
   margin-right: auto;
   box-sizing: border-box;
   width: 80%;
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+    @media (min-width: 1024px) {
+
+  section {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+    @media (min-width: 1280px) {
+
+  section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
     ul li {
   list-style-type: disc;
@@ -1905,6 +1919,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1917,9 +1932,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -1987,6 +2004,7 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:block {
@@ -1997,6 +2015,7 @@ a:hover {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:right-0 {
@@ -2056,7 +2075,12 @@ a:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
+
 @media (min-width: 1280px) {
+
+  .xl\:h-40 {
+    height: 10rem;
+  }
 
   .xl\:\!w-1\/3 {
     width: 33.333333% !important;
@@ -2064,5 +2088,9 @@ a:hover {
 
   .xl\:\!w-3\/5 {
     width: 60% !important;
+  }
+
+  .xl\:\!w-\[63\%\] {
+    width: 63% !important;
   }
 }
