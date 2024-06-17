@@ -1,5 +1,8 @@
 const fadeInElements = [];
-// Getting all elements' position after a short delay
+/* 
+    * Getting all elements' position after a short delay in order to avoid getting
+    * wrong position values due to `fade` class transition
+*/
 setTimeout(() => {
     document.querySelectorAll('.fade:not(.active)').forEach(element => {
         fadeInElements.push({
