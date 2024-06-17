@@ -1489,8 +1489,53 @@ a:hover {
 .w-full {
   width: 100%;
 }
+.w-3 {
+  width: 0.75rem;
+}
+.w-\[130\%\] {
+  width: 130%;
+}
+.min-w-\[\] {
+  min-width: ;
+}
+.min-w-\[25rem\] {
+  min-width: 25rem;
+}
+.min-w-\[28rem\] {
+  min-width: 28rem;
+}
+.min-w-\[2rem\] {
+  min-width: 2rem;
+}
+.min-w-\[29rem\] {
+  min-width: 29rem;
+}
+.min-w-\[29\] {
+  min-width: 29;
+}
+.min-w-\[30rem\] {
+  min-width: 30rem;
+}
 .max-w-none {
   max-width: none;
+}
+.max-w-\[none\] {
+  max-width: none;
+}
+.max-w-\[\] {
+  max-width: ;
+}
+.max-w-\[30rem\] {
+  max-width: 30rem;
+}
+.max-w-\[35rem\] {
+  max-width: 35rem;
+}
+.max-w-\[33rem\] {
+  max-width: 33rem;
+}
+.max-w-\[31rem\] {
+  max-width: 31rem;
 }
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
@@ -1857,5 +1902,48 @@ a:hover {
 
   .sm\:bg-\[url\(\'\.\.\/assets\/icons\/websites\.jpeg\'\)\] {
     background-image: url('../assets/icons/websites.jpeg');
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:\!w-3\/5 {
+    width: 60% !important;
+  }
+
+  .md\:\!w-1\/3 {
+    width: 33.333333% !important;
+  }
+
+  .md\:max-w-96 {
+    max-width: 24rem;
+  }
+
+  .md\:max-w-8 {
+    max-width: 2rem;
+  }
+
+  .md\:max-w-9 {
+    max-width: 2.25rem;
+  }
+
+  .md\:max-w-\[22rem\] {
+    max-width: 22rem;
+  }
+
+  .md\:max-w-\[21rem\] {
+    max-width: 21rem;
+  }
+
+  .md\:max-w-none {
+    max-width: none;
   }
 }
