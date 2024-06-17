@@ -170,7 +170,8 @@
     .project-header > div{
         height: calc(100vh - 240px);
         @apply p-11 box-border min-h-96 bg-[#a4a5a5] overflow-hidden;
-        @apply sm:min-h-56 sm:h-56
+        @apply sm:min-h-56 sm:h-56;
+        @apply lg:h-80 lg:px-48;
     }
     .project-header h1{
         @apply text-4xl inline-block pr-3 bg-[#313131] text-white;

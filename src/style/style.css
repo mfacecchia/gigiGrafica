@@ -891,12 +891,21 @@ a:hover {
         overflow: hidden;
         --tw-bg-opacity: 1;
         background-color: rgb(164 165 165 / var(--tw-bg-opacity));
-        padding: 2.75rem}
+        padding: 2.75rem;
+    }
 @media (min-width: 640px) {
 
   .project-header > div {
     height: 14rem;
     min-height: 14rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .project-header > div {
+    height: 20rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 }
 .project-header h1 {
@@ -1908,5 +1917,11 @@ a:hover {
 
   .md\:hidden {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:flex {
+    display: flex;
   }
 }
