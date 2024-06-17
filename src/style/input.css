@@ -64,10 +64,10 @@
         @apply my-40 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
     .fade{
-        @apply translate-y-32 opacity-0 transition-[transform,opacity] duration-[1500ms];
+        @apply translate-y-32 opacity-0;
     }
     .fade.active{
-        @apply translate-y-0 opacity-100;
+        @apply translate-y-0 opacity-100 transition-[transform,opacity] duration-[1500ms];
     }
     #logo{
         height: calc(100vh - 100px);

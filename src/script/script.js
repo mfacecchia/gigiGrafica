@@ -1,29 +1,36 @@
 const fadeInElements = [];
-document.querySelectorAll('.fade:not(.active)').forEach(element => {
-    fadeInElements.push({
-        element: element,
-        yAxisOffset: element.getBoundingClientRect().top + window.scrollY
+// Getting all elements' position after a short delay
+setTimeout(() => {
+    document.querySelectorAll('.fade:not(.active)').forEach(element => {
+        fadeInElements.push({
+            element: element,
+            yAxisOffset: element.getBoundingClientRect().top + window.scrollY
+        });
     });
-});
+    showElementsOnLoad();
+}, 200);
 
-if(fadeInElements.length){
-    window.onscroll = () => {
-        if(window.scrollY >= fadeInElements[0].yAxisOffset - (window.innerHeight / 1.5)){
+function showElementsOnLoad(){
+    /*
+        * Shows all elements before the scrolling Y offset in case the page is not loaded
+        * at the very beginning
+    */
+    let lowestElementReached = false;
+    while(!lowestElementReached && fadeInElements.length){
+        if(window.scrollY >= fadeInElements[0].yAxisOffset - (window.innerHeight / 1.1)){
             fadeInElements[0].element.classList.add('active');
             fadeInElements.shift();
-            if(!fadeInElements.length) window.onscroll = undefined;
+            continue;
         }
-    };
-    window.onload = () => {
-        let maxElementReached = false;
-        while(!maxElementReached && fadeInElements.length){
-            if(window.scrollY >= fadeInElements[0].yAxisOffset - (window.innerHeight / 1.2)){
-                fadeInElements[0].element.classList.add('active');
-                fadeInElements.shift();
-                continue;
-            }
-            maxElementReached = true;
-        }
+        lowestElementReached = true;
+    }
+    fadeInElements.length? window.onscroll = showElementOnScroll: window.onscroll = undefined;
+}
+
+function showElementOnScroll(){
+    if(window.scrollY >= fadeInElements[0].yAxisOffset - (window.innerHeight / 1.1)){
+        fadeInElements[0].element.classList.add('active');
+        fadeInElements.shift();
         if(!fadeInElements.length) window.onscroll = undefined;
-    };
+    }
 }
