@@ -1390,6 +1390,9 @@ a:hover {
 .mt-\[15\%\] {
   margin-top: 15%;
 }
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -1771,6 +1774,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -1783,9 +1787,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:left-4 {
