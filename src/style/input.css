@@ -56,6 +56,7 @@
     }
     section{
         @apply w-4/5 px-6 box-border mx-auto;
+        @apply px-11;
     }
     ul li{
         @apply list-disc;
@@ -250,6 +251,7 @@
     }
     .websiteContainer{
         @apply px-0;
+        @apply px-20;
     }
     .websiteContainer:nth-of-type(n + 2){
         @apply mt-52;
@@ -260,10 +262,12 @@
     }
     .websiteContainer .websiteInformationContainer{
         @apply flex flex-col gap-2 w-full h-[400px] rounded-3xl;
+        @apply lg:h-[500px];
     }
     .websiteContainer article > figure{
         @apply w-full box-border py-16 rounded-3xl overflow-visible flex;
         @apply sm:h-[400px];
+        @apply lg:h-[500px];
     }
     .websiteInformationContainer header{
         @apply w-full h-1/3 rounded-3xl text-white flex flex-col items-start justify-center box-border px-6 text-xl;
