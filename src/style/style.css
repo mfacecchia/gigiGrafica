@@ -1201,9 +1201,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.75rem;
   padding-left: 0px;
   padding-right: 0px;
+  row-gap: 4rem;
 }
 #messages article {
   display: flex;
@@ -1217,6 +1217,12 @@ a:hover {
   margin-left: 1rem;
   height: 8rem;
 }
+@media (min-width: 640px) {
+
+  #messages article .messageSticker img {
+    margin-left: 1.5rem;
+  }
+}
 #messages .messageSender {
   align-items: flex-end;
   justify-self: end;
@@ -1226,6 +1232,12 @@ a:hover {
   width: 91.666667%;
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
+}
+@media (min-width: 640px) {
+
+  #messages .messageContent {
+    width: 60%;
+  }
 }
 #messages .messageContent .contactIcon {
   display: flex;
@@ -1254,8 +1266,23 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+@media (min-width: 640px) {
+
+  #messages .messageContent .messageBubble {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
 #messages .messageSender .messageContent {
   width: 75%;
+}
+@media (min-width: 640px) {
+
+  #messages .messageSender .messageContent {
+    width: 60%;
+  }
 }
 #messages .messageSender .messageContent .messageBubble {
   justify-content: flex-end;

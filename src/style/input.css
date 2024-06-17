@@ -287,19 +287,22 @@
         @apply h-5;
     }
     #messages{
-        @apply px-0 flex flex-col items-center gap-y-11 mb-40
+        @apply px-0 flex flex-col items-center gap-y-11 mb-40;
+        @apply gap-y-16;
     }
     #messages article{
         @apply w-full min-w-[300px] flex flex-col gap-x-2;
     }
     #messages article .messageSticker img{
         @apply h-32 ml-4;
+        @apply sm:ml-6;
     }
     #messages .messageSender{
         @apply justify-self-end items-end;
     }
     #messages .messageContent{
         @apply w-11/12 flex gap-x-1;
+        @apply sm:w-3/5;
     }
     #messages .messageContent .contactIcon{
         @apply w-9 aspect-square rounded-full bg-gradient-to-b overflow-hidden flex items-end justify-center;
@@ -309,9 +312,11 @@
     }
     #messages .messageContent .messageBubble{
         @apply flex items-center justify-start w-full box-border px-3 text-white text-xs relative;
+        @apply sm:px-6 sm:text-sm;
     }
     #messages .messageSender .messageContent{
         @apply w-3/4;
+        @apply sm:w-3/5;
     }
     #messages .messageSender .messageContent .messageBubble{
         @apply justify-end;
