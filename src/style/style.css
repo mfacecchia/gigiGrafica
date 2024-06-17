@@ -1133,8 +1133,13 @@ a:hover {
 .websiteContainer {
   padding-left: 0px;
   padding-right: 0px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+}
+@media (min-width: 1024px) {
+
+  .websiteContainer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 .websiteContainer:nth-of-type(n + 2) {
   margin-top: 13rem;
@@ -1886,7 +1891,6 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -1899,11 +1903,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -1971,7 +1973,6 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -1982,7 +1983,6 @@ a:hover {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:right-0 {
@@ -1997,20 +1997,16 @@ a:hover {
     display: flex;
   }
 
+  .lg\:\!h-48 {
+    height: 12rem !important;
+  }
+
   .lg\:h-4\/5 {
     height: 80%;
   }
 
   .lg\:h-\[90\%\] {
     height: 90%;
-  }
-
-  .lg\:\!h-4 {
-    height: 1rem !important;
-  }
-
-  .lg\:\!h-48 {
-    height: 12rem !important;
   }
 
   .lg\:max-h-80 {

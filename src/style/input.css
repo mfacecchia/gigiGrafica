@@ -254,7 +254,7 @@
     }
     .websiteContainer{
         @apply px-0;
-        @apply px-20;
+        @apply lg:px-20;
     }
     .websiteContainer:nth-of-type(n + 2){
         @apply mt-52;
