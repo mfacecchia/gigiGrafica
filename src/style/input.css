@@ -216,13 +216,13 @@
     }
     #dataSheet > div div{
         @apply flex flex-col gap-5;
-        @apply md:flex-row;
+        @apply sm:flex-row;
     }
     #dataSheet .logoColorTest{
         @apply w-full flex-col gap-y-5 md:w-1/2;
     }
     #dataSheet > div div.gridElement{
-        @apply grid gap-5;
+        @apply grid gap-5 w-full;
     }
     #photosEventsSelection{
         @apply space-y-3
