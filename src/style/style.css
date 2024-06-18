@@ -1218,6 +1218,13 @@ a:hover {
     padding-right: 11rem;
   }
 }
+@media (min-width: 1536px) {
+
+  .websiteContainer {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+}
 .websiteContainer:nth-of-type(n + 2) {
   margin-top: 13rem;
 }
@@ -2135,6 +2142,22 @@ a:hover {
 
   .lg\:max-w-\[40rem\] {
     max-width: 40rem;
+  }
+
+  .lg\:max-w-\[39rem\] {
+    max-width: 39rem;
+  }
+
+  .lg\:max-w-\[rem\] {
+    max-width: rem;
+  }
+
+  .lg\:max-w-\[35rem\] {
+    max-width: 35rem;
+  }
+
+  .lg\:max-w-\[36rem\] {
+    max-width: 36rem;
   }
 
   .lg\:translate-x-0 {

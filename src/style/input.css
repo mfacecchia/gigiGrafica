@@ -263,6 +263,7 @@
         @apply px-0;
         @apply lg:px-20;
         @apply xl:px-44;
+        @apply 2xl:px-56;
     }
     .websiteContainer:nth-of-type(n + 2){
         @apply mt-52;
