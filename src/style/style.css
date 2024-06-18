@@ -1389,6 +1389,12 @@ a:hover {
     width: 45%;
   }
 }
+@media (min-width: 1280px) {
+
+  #messages .messageContent {
+    width: 40%;
+  }
+}
 #messages .messageContent .contactIcon {
   display: flex;
   aspect-ratio: 1 / 1;
@@ -1463,6 +1469,12 @@ a:hover {
 
   #messages .messageSender .messageContent {
     width: 40%;
+  }
+}
+@media (min-width: 1280px) {
+
+  #messages .messageSender .messageContent {
+    width: 35%;
   }
 }
 #messages .messageSender .messageContent .messageBubble {

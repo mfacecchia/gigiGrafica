@@ -325,6 +325,7 @@
         @apply sm:w-4/6;
         @apply md:w-3/5;
         @apply lg:w-[45%];
+        @apply xl:w-2/5;
     }
     #messages .messageContent .contactIcon{
         @apply w-9 aspect-square rounded-full bg-gradient-to-b overflow-hidden flex items-end justify-center;
@@ -344,6 +345,7 @@
         @apply sm:w-3/5;
         @apply md:w-[55%];
         @apply lg:w-2/5;
+        @apply xl:w-[35%];
     }
     #messages .messageSender .messageContent .messageBubble{
         @apply justify-end;
