@@ -202,6 +202,7 @@
     .projects-grid article > *{
         @apply w-11/12;
         @apply sm:w-1/2;
+        @apply 2xl:w-2/5;
     }
     .projects-grid article img{
         @apply rounded-xl shadow-lg;

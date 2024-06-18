@@ -1006,6 +1006,12 @@ a:hover {
     width: 50%;
   }
 }
+@media (min-width: 1536px) {
+
+  .projects-grid article > * {
+    width: 40%;
+  }
+}
 .projects-grid article img {
   border-radius: 0.75rem;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
