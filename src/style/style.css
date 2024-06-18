@@ -1105,6 +1105,16 @@ a:hover {
     padding-right: 5rem;
   }
 }
+@media (min-width: 1280px) {
+
+  .photography {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+#photosEventsSelection{
+        /* TODO: Convert this to flexbox */
+    }
 #photosEventsSelection > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1134,6 +1144,12 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+@media (min-width: 1280px) {
+
+  #photosEventsSelection div {
+    padding: 1.5rem;
+  }
+}
 #event > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1146,7 +1162,8 @@ a:hover {
   }
 }
 #event #photos {
-  height: 24rem;
+  aspect-ratio: 9/12;
+  height: auto;
   width: 100%;
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
   --tw-scroll-snap-strictness: mandatory;
@@ -1156,12 +1173,6 @@ a:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-@media (min-width: 1024px) {
-
-  #event #photos {
-    height: 450px;
-  }
 }
 #event #photos img {
   height: 100%;
