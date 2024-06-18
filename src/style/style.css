@@ -523,6 +523,13 @@ video {
     padding-right: 5rem;
   }
 }
+    @media (min-width: 1536px) {
+
+  section {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
     ul li {
   list-style-type: disc;
 }
@@ -1370,6 +1377,13 @@ a:hover {
   padding-right: 0px;
   row-gap: 4rem;
 }
+@media (min-width: 1536px) {
+
+  #messages {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
 #messages article {
   display: flex;
   width: 100%;
@@ -1392,6 +1406,12 @@ a:hover {
 
   #messages article .messageSticker img {
     height: 10rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  #messages article .messageSticker img {
+    height: 9rem;
   }
 }
 #messages .messageSender {
@@ -1426,6 +1446,12 @@ a:hover {
 
   #messages .messageContent {
     width: 40%;
+  }
+}
+@media (min-width: 1536px) {
+
+  #messages .messageContent {
+    width: 33.333333%;
   }
 }
 #messages .messageContent .contactIcon {
@@ -1508,6 +1534,12 @@ a:hover {
 
   #messages .messageSender .messageContent {
     width: 35%;
+  }
+}
+@media (min-width: 1536px) {
+
+  #messages .messageSender .messageContent {
+    width: 30%;
   }
 }
 #messages .messageSender .messageContent .messageBubble {
@@ -2216,5 +2248,11 @@ a:hover {
   .xl\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .\32xl\:w-4\/5 {
+    width: 80%;
   }
 }
