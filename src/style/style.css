@@ -1181,6 +1181,13 @@ a:hover {
     padding-right: 5rem;
   }
 }
+@media (min-width: 1280px) {
+
+  .websiteContainer {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
 .websiteContainer:nth-of-type(n + 2) {
   margin-top: 13rem;
 }
@@ -1209,7 +1216,7 @@ a:hover {
 @media (min-width: 1024px) {
 
   .websiteContainer .websiteInformationContainer {
-    height: 500px;
+    height: 550px;
   }
 }
 .websiteContainer article > figure {
@@ -1233,6 +1240,12 @@ a:hover {
     height: 500px;
   }
 }
+@media (min-width: 1280px) {
+
+  .websiteContainer article > figure {
+    height: 550px;
+  }
+}
 .websiteInformationContainer header {
   box-sizing: border-box;
   display: flex;
@@ -1252,7 +1265,6 @@ a:hover {
 .websiteInformationContainer main {
   box-sizing: border-box;
   display: flex;
-  height: 100%;
   width: 100%;
   flex-direction: column;
   gap: 0.5rem;
@@ -1260,6 +1272,7 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   padding: 0.5rem;
+  height: 83.333333%;
 }
 .websiteInformationContainer .websiteFigures {
   display: flex;
@@ -1268,6 +1281,12 @@ a:hover {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   border-radius: 1.5rem;
+}
+@media (min-width: 1280px) {
+
+  .websiteInformationContainer .websiteFigures {
+    height: 36%;
+  }
 }
 .websiteFigures figure {
   display: flex;
@@ -1974,8 +1993,8 @@ a:hover {
     aspect-ratio: 1 / 1;
   }
 
-  .sm\:\!h-3\/4 {
-    height: 75% !important;
+  .sm\:\!h-\[90\%\] {
+    height: 90% !important;
   }
 
   .sm\:\!w-1\/2 {
@@ -2078,8 +2097,28 @@ a:hover {
 }
 @media (min-width: 1280px) {
 
+  .xl\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .xl\:\!h-1\/2 {
+    height: 50% !important;
+  }
+
+  .xl\:\!h-auto {
+    height: auto !important;
+  }
+
+  .xl\:h-1\/2 {
+    height: 50%;
+  }
+
   .xl\:h-40 {
     height: 10rem;
+  }
+
+  .xl\:\!w-1\/2 {
+    width: 50% !important;
   }
 
   .xl\:\!w-1\/3 {
@@ -2088,5 +2127,38 @@ a:hover {
 
   .xl\:\!w-\[63\%\] {
     width: 63% !important;
+  }
+
+  .xl\:w-4\/5 {
+    width: 80%;
+  }
+
+  .xl\:w-\[110\%\] {
+    width: 110%;
+  }
+
+  .xl\:w-\[130\%\] {
+    width: 130%;
+  }
+
+  .xl\:w-\[160\%\] {
+    width: 160%;
+  }
+
+  .xl\:max-w-\[31rem\] {
+    max-width: 31rem;
+  }
+
+  .xl\:max-w-\[32rem\] {
+    max-width: 32rem;
+  }
+
+  .xl\:self-start {
+    align-self: flex-start;
+  }
+
+  .xl\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
