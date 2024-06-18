@@ -238,6 +238,7 @@
         @apply sm:flex-row sm:gap-5;
         @apply lg:px-20;
         @apply xl:px-44;
+        @apply 2xl:px-56;
     }
     #photosEventsSelection{
         /* TODO: Convert this to flexbox */
