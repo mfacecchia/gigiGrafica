@@ -215,6 +215,7 @@
     #dataSheet{
         @apply space-y-20;
         @apply lg:px-20;
+        @apply 2xl:px-48 2xl:space-y-32;
     }
     #dataSheet > div{
         @apply space-y-5;
