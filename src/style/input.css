@@ -209,6 +209,9 @@
     .project-header#manifestsHeader p{
         @apply text-black;
     }
+    .project-header#photographyHeader :is(h1, p){
+        @apply text-[#573E1D];
+    }
     .project-header#graphicodeHeader h1{
         @apply text-black;
     }
