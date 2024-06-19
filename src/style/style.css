@@ -943,8 +943,56 @@ a:hover {
   width: 100%;
   padding: 0px;
 }
-.project-header :is(img, svg) {
-  display: none;
+.project-header h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.project-header .headerImage {
+  position: absolute;
+}
+.project-header#websitesHeader .headerImage {
+  bottom: -2rem;
+  right: 0px;
+  height: 60%;
+  max-height: 20rem;
+  min-height: 14rem;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+
+  .project-header#websitesHeader .headerImage {
+    right: 8rem;
+    height: 90%;
+  }
+}
+.project-header#photographyHeader .headerImage {
+  bottom: 0px;
+  right: -2.75rem;
+  height: 50%;
+  max-height: 18rem;
+  min-height: 13rem;
+}
+@media (min-width: 1024px) {
+
+  .project-header#photographyHeader .headerImage {
+    right: 8rem;
+    height: 90%;
+  }
+}
+.project-header#graphicodeHeader .headerImage {
+  bottom: 0px;
+  right: -13rem;
+  height: 50%;
+  max-height: 18rem;
+  min-height: 13rem;
+}
+@media (min-width: 1024px) {
+
+  .project-header#graphicodeHeader .headerImage {
+    right: 0px;
+    height: 80%;
+    max-height: 20rem;
+  }
 }
 .project-header section img {
   display: block;
@@ -954,8 +1002,6 @@ a:hover {
         box-sizing: border-box;
         min-height: 24rem;
         overflow: hidden;
-        --tw-bg-opacity: 1;
-        background-color: rgb(164 165 165 / var(--tw-bg-opacity));
         padding: 2.75rem;
     }
 @media (min-width: 640px) {
@@ -982,6 +1028,11 @@ a:hover {
   line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.project-header#graphicodeHeader h1 {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .project-header p {
   font-size: 1.25rem;
@@ -1610,26 +1661,11 @@ a:hover {
 .relative {
   position: relative;
 }
-.-bottom-8 {
-  bottom: -2rem;
-}
-.-right-11 {
-  right: -2.75rem;
-}
-.-right-52 {
-  right: -13rem;
-}
-.bottom-0 {
-  bottom: 0px;
-}
 .right-0 {
   right: 0px;
 }
 .right-4 {
   right: 1rem;
-}
-.top-0 {
-  top: 0px;
 }
 .top-1\/2 {
   top: 50%;
@@ -1707,20 +1743,11 @@ a:hover {
 .grid {
   display: grid;
 }
-.\!hidden {
-  display: none !important;
-}
 .hidden {
   display: none;
 }
 .\!h-40 {
   height: 10rem !important;
-}
-.h-1\/2 {
-  height: 50%;
-}
-.h-3\/5 {
-  height: 60%;
 }
 .h-32 {
   height: 8rem;
@@ -1731,26 +1758,11 @@ a:hover {
 .h-\[3px\] {
   height: 3px;
 }
-.h-\[480px\] {
-  height: 480px;
-}
 .h-full {
   height: 100%;
 }
 .h-screen {
   height: 100vh;
-}
-.max-h-72 {
-  max-height: 18rem;
-}
-.max-h-80 {
-  max-height: 20rem;
-}
-.min-h-52 {
-  min-height: 13rem;
-}
-.min-h-56 {
-  min-height: 14rem;
 }
 .w-16 {
   width: 4rem;
@@ -1810,9 +1822,6 @@ a:hover {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1846,9 +1855,6 @@ a:hover {
   margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
-.overflow-hidden {
-  overflow: hidden;
-}
 .\!overflow-visible {
   overflow: visible !important;
 }
@@ -1865,10 +1871,6 @@ a:hover {
 .\!bg-\[\#E0C797\] {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(224 199 151 / var(--tw-bg-opacity)) !important;
-}
-.\!bg-\[\#E9CECE\] {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(233 206 206 / var(--tw-bg-opacity)) !important;
 }
 .\!bg-transparent {
   background-color: transparent !important;
@@ -1896,6 +1898,10 @@ a:hover {
 .bg-\[\#E9CECE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 206 206 / var(--tw-bg-opacity));
+}
+.bg-\[\#a4a5a5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(164 165 165 / var(--tw-bg-opacity));
 }
 .bg-graphicode_purple-500 {
   --tw-bg-opacity: 1;
@@ -2022,10 +2028,6 @@ a:hover {
 .\!text-\[\#573E1D\] {
   --tw-text-opacity: 1 !important;
   color: rgb(87 62 29 / var(--tw-text-opacity)) !important;
-}
-.\!text-black {
-  --tw-text-opacity: 1 !important;
-  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 .text-\[\#152E60\] {
   --tw-text-opacity: 1;
@@ -2157,14 +2159,6 @@ a:hover {
 
 @media (min-width: 1024px) {
 
-  .lg\:right-0 {
-    right: 0px;
-  }
-
-  .lg\:right-32 {
-    right: 8rem;
-  }
-
   .lg\:col-start-1 {
     grid-column-start: 1;
   }
@@ -2199,18 +2193,6 @@ a:hover {
 
   .lg\:\!h-auto {
     height: auto !important;
-  }
-
-  .lg\:h-4\/5 {
-    height: 80%;
-  }
-
-  .lg\:h-\[90\%\] {
-    height: 90%;
-  }
-
-  .lg\:max-h-80 {
-    max-height: 20rem;
   }
 
   .lg\:\!w-1\/2 {
