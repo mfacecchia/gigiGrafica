@@ -1971,6 +1971,10 @@ a:hover {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .\!pb-0 {
   padding-bottom: 0px !important;
 }
@@ -2040,6 +2044,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -2052,9 +2057,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -2122,6 +2129,7 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2131,7 +2139,16 @@ a:hover {
   .md\:hidden {
     display: none;
   }
+
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
+  .md\:w-11\/12 {
+    width: 91.666667%;
+  }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:right-0 {
@@ -2191,6 +2208,7 @@ a:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:aspect-square {
@@ -2250,6 +2268,7 @@ a:hover {
     padding-bottom: 3.5rem;
   }
 }
+
 @media (min-width: 1536px) {
 
   .\32xl\:w-4\/5 {
