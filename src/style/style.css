@@ -1520,6 +1520,15 @@ a:hover {
     height: 9rem;
   }
 }
+#messages article.messageSender .messageSticker img {
+  height: 10rem;
+}
+@media (min-width: 1024px) {
+
+  #messages article.messageSender .messageSticker img {
+    height: 12rem;
+  }
+}
 #messages .messageSender {
   align-items: flex-end;
   justify-self: end;
@@ -1754,9 +1763,6 @@ a:hover {
 .hidden {
   display: none;
 }
-.\!h-40 {
-  height: 10rem !important;
-}
 .h-32 {
   height: 8rem;
 }
@@ -1868,9 +1874,6 @@ a:hover {
 }
 .rounded-full {
   border-radius: 9999px;
-}
-.\!bg-transparent {
-  background-color: transparent !important;
 }
 .bg-\[\#313131\] {
   --tw-bg-opacity: 1;
@@ -2049,6 +2052,7 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 @keyframes bounce {
 
   0%, 100% {
@@ -2061,9 +2065,11 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
+
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
+
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -2127,6 +2133,7 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2141,6 +2148,7 @@ a:hover {
     width: 91.666667%;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:col-start-1 {
@@ -2169,10 +2177,6 @@ a:hover {
 
   .lg\:\!h-3\/5 {
     height: 60% !important;
-  }
-
-  .lg\:\!h-48 {
-    height: 12rem !important;
   }
 
   .lg\:\!h-auto {
@@ -2204,6 +2208,7 @@ a:hover {
     align-self: flex-start;
   }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:\!h-1\/2 {
@@ -2239,6 +2244,7 @@ a:hover {
     padding-bottom: 3.5rem;
   }
 }
+
 @media (min-width: 1536px) {
 
   .\32xl\:\!h-1\/2 {

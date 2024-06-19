@@ -361,6 +361,10 @@
         @apply lg:h-40;
         @apply 2xl:h-36;
     }
+    #messages article.messageSender .messageSticker img{
+        @apply h-40;
+        @apply lg:h-48
+    }
     #messages .messageSender{
         @apply justify-self-end items-end;
     }
