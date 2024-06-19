@@ -43,6 +43,7 @@ async function updateEventSection(eventID){
     const loadingMessage = document.createElement('p');
     photographiesContainer.style.display = 'flex';
     loadingMessage.textContent = 'Caricamento in corso...';
+    photographiesContainer.textContent = '';
     photographiesContainer.appendChild(loadingMessage);
     // Fallback in case event does not exist
     if(!photographiesEvents[eventID]) eventID = 'garaDelCuoco';
