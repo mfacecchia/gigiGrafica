@@ -331,7 +331,10 @@
         @apply w-full h-3/4 rounded-3xl bg-gray-300 box-border p-2 flex flex-col gap-2;
     }
     .websiteInformationContainer main aside{
-        @apply h-full w-full rounded-3xl bg-slate-200 box-border p-7 overflow-y-scroll overflow-x-hidden flex flex-col items-start justify-center relative;
+        @apply h-full w-full rounded-3xl bg-slate-200 box-border p-7 overflow-x-hidden flex flex-col items-start justify-center relative;
+    }
+    .websiteInformationContainer main aside p{
+        @apply overflow-y-scroll;
     }
     .websiteInformationContainer .websiteFigures{
         @apply w-full h-2/5 rounded-3xl flex gap-x-2;

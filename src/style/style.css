@@ -1440,11 +1440,13 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   overflow-x: hidden;
-  overflow-y: scroll;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding: 1.75rem;
+}
+.websiteInformationContainer main aside p {
+  overflow-y: scroll;
 }
 .websiteInformationContainer .websiteFigures {
   display: flex;
