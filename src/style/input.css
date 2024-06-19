@@ -145,6 +145,14 @@
         @apply sm:aspect-auto sm:min-h-72;
         @apply xl:min-h-96;
     }
+    .project article a:is(#manifestsLink, #graphicodeLink){
+        @apply sm:w-[47%];
+        @apply xl:w-[63%];
+    }
+    .project article a:is(#gigiLogoGraphicalDesignLink, #photographyLink){
+        @apply sm:w-[47%];
+        @apply xl:w-1/3;
+    }
     .project article a main{
         @apply w-3/4 space-y-2 leading-tight;
     }
