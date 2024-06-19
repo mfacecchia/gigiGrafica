@@ -420,7 +420,7 @@ video {
   scroll-behavior: smooth;
 }
     body {
-  min-width: 300px;
+  min-width: 350px;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-top: 7rem;
@@ -1471,6 +1471,9 @@ a:hover {
   justify-content: center;
   overflow: visible;
 }
+.websiteFigures figure img {
+  max-width: none;
+}
 #graphicodeContacts > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1707,8 +1710,8 @@ a:hover {
   color: rgb(68 37 97 / var(--tw-text-opacity));
 }
 .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 @media (min-width: 640px) {
 
@@ -2137,7 +2140,6 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -2150,11 +2152,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -2218,7 +2218,6 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2233,7 +2232,6 @@ a:hover {
     width: 91.666667%;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:col-start-1 {
@@ -2297,7 +2295,6 @@ a:hover {
     background-image: url('../assets/icons/graphicode.svg');
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:\!h-1\/2 {
@@ -2333,7 +2330,6 @@ a:hover {
     padding-bottom: 3.5rem;
   }
 }
-
 @media (min-width: 1536px) {
 
   .\32xl\:\!h-1\/2 {
