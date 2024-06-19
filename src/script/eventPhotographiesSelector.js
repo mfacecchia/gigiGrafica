@@ -40,7 +40,7 @@ document.querySelectorAll('#photosEventsSelection > div').forEach(eventButton =>
 async function updateEventSection(eventID){
     const photographiesSection = document.querySelector('#event');
     const photographiesContainer = photographiesSection.querySelector('#photos');
-    const loadingMessage = document.createElement('sub');
+    const loadingMessage = document.createElement('p');
     photographiesContainer.style.display = 'flex';
     loadingMessage.textContent = 'Caricamento in corso...';
     photographiesContainer.appendChild(loadingMessage);

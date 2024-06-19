@@ -1333,6 +1333,11 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+#event #photos p {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+}
 .websiteContainer:nth-of-type(n + 2) {
   margin-top: 13rem;
 }

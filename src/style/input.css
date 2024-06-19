@@ -303,6 +303,9 @@
     #event #photos img{
         @apply w-full h-full object-cover snap-start;
     }
+    #event #photos p{
+        @apply inline-block w-4/5 text-center;
+    }
     .websiteContainer:nth-of-type(n + 2){
         @apply mt-52;
     }
