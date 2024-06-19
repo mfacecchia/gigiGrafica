@@ -420,6 +420,7 @@ video {
   scroll-behavior: smooth;
 }
     body {
+  min-width: 300px;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-top: 7rem;
@@ -575,6 +576,9 @@ video {
     #logo{
         height: calc(100vh - 100px);
     }
+    section, .project-header > div article {
+  max-width: 1920px;
+}
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -989,7 +993,7 @@ a:hover {
     height: 90%;
   }
 }
-.project-header#graphicodeHeader .headerImage {
+.project-header#gigiLogoHeader .headerImage {
   bottom: 0px;
   right: -13rem;
   height: 50%;
@@ -998,7 +1002,7 @@ a:hover {
 }
 @media (min-width: 1024px) {
 
-  .project-header#graphicodeHeader .headerImage {
+  .project-header#gigiLogoHeader .headerImage {
     right: 0px;
     height: 80%;
     max-height: 20rem;
@@ -1007,25 +1011,36 @@ a:hover {
 .project-header section img {
   display: block;
 }
-.project-header > div{
+.project-header:not(#graphicodeHeader) > div{
         height: calc(100vh - 240px);
-        position: relative;
         box-sizing: border-box;
         min-height: 24rem;
         overflow: hidden;
-        padding: 2.75rem;
     }
 @media (min-width: 640px) {
 
-  .project-header > div {
+  .project-header:not(#graphicodeHeader) > div {
     height: 14rem;
     min-height: 14rem;
   }
 }
 @media (min-width: 1024px) {
 
-  .project-header > div {
+  .project-header:not(#graphicodeHeader) > div {
     height: 20rem;
+  }
+}
+.project-header > div article {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  padding: 2.75rem;
+}
+@media (min-width: 1024px) {
+
+  .project-header > div article {
     padding-left: 12rem;
     padding-right: 12rem;
   }
@@ -1063,7 +1078,7 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(87 62 29 / var(--tw-text-opacity));
 }
-.project-header#graphicodeHeader h1 {
+.project-header#gigiLogoHeader h1 {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -1339,6 +1354,12 @@ a:hover {
 
   .websiteContainer .websiteInformationContainer {
     height: 550px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .websiteContainer .websiteInformationContainer {
+    max-height: 550px;
   }
 }
 .websiteContainer article > figure {
@@ -1753,6 +1774,10 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1776,6 +1801,9 @@ a:hover {
 }
 .mb-20 {
   margin-bottom: 5rem;
+}
+.mb-40 {
+  margin-bottom: 10rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -2300,7 +2328,19 @@ a:hover {
     height: 50% !important;
   }
 
+  .\32xl\:max-h-full {
+    max-height: 100%;
+  }
+
   .\32xl\:w-4\/5 {
     width: 80%;
+  }
+
+  .\32xl\:max-w-\[44rem\] {
+    max-width: 44rem;
+  }
+
+  .\32xl\:max-w-none {
+    max-width: none;
   }
 }

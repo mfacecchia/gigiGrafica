@@ -30,7 +30,7 @@
         @apply scroll-smooth;
     }
     body{
-        @apply bg-gray-100 pt-28;
+        @apply bg-gray-100 pt-28 min-w-[300px];
     }
     h1, p, b, a, li, sub{
         font-family: 'Mluvka'
@@ -77,6 +77,9 @@
     }
     #logo{
         height: calc(100vh - 100px);
+    }
+    section, .project-header > div article{
+        @apply max-w-[1920px];
     }
 }
 
@@ -186,18 +189,22 @@
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-11;
         @apply lg:h-[90%] lg:right-32;
     }
-    .project-header#graphicodeHeader .headerImage{
+    .project-header#gigiLogoHeader .headerImage{
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-52;
         @apply lg:right-0 lg:h-4/5 lg:max-h-80;
     }
     .project-header section img{
         @apply block;
     }
-    .project-header > div{
+    .project-header:not(#graphicodeHeader) > div{
         height: calc(100vh - 240px);
-        @apply p-11 box-border min-h-96 overflow-hidden relative;
+        @apply box-border min-h-96 overflow-hidden;
         @apply sm:min-h-56 sm:h-56;
-        @apply lg:h-80 lg:px-48;
+        @apply lg:h-80;
+    }
+    .project-header > div article{
+        @apply w-full h-full mx-auto relative p-11;
+        @apply lg:px-48;
     }
     .project-header#websitesHeader > div{
         @apply relative overflow-visible bg-[#57B5FF];
@@ -215,7 +222,7 @@
     .project-header#photographyHeader :is(h1, p){
         @apply text-[#573E1D];
     }
-    .project-header#graphicodeHeader h1{
+    .project-header#gigiLogoHeader h1{
         @apply text-black;
     }
     .project-header p{
@@ -306,6 +313,7 @@
     .websiteContainer .websiteInformationContainer{
         @apply flex flex-col gap-2 w-full h-[400px] rounded-3xl;
         @apply lg:h-[550px];
+        @apply 2xl:max-h-[550px];
     }
     .websiteContainer article > figure{
         @apply w-full box-border py-16 rounded-3xl overflow-visible flex;
