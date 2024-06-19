@@ -173,9 +173,6 @@
     .project-header section{
         @apply w-full p-0;
     }
-    .project-header h1{
-        @apply text-5xl;
-    }
     .project-header .headerImage{
         @apply absolute;
     }
@@ -196,18 +193,27 @@
     }
     .project-header > div{
         height: calc(100vh - 240px);
-        @apply p-11 box-border min-h-96 overflow-hidden;
+        @apply p-11 box-border min-h-96 overflow-hidden relative;
         @apply sm:min-h-56 sm:h-56;
         @apply lg:h-80 lg:px-48;
     }
+    .project-header#websitesHeader > div{
+        @apply relative overflow-visible bg-[#57B5FF];
+    }
     .project-header h1{
-        @apply text-4xl inline-block pr-3 bg-[#313131] text-white;
+        @apply text-5xl inline-block pr-3 text-white;
+    }
+    .project-header#manifestsHeader h1{
+        @apply bg-[#313131];
+    }
+    .project-header#manifestsHeader p{
+        @apply text-black;
     }
     .project-header#graphicodeHeader h1{
-        @apply bg-transparent text-black;
+        @apply text-black;
     }
     .project-header p{
-        @apply text-xl;
+        @apply text-xl text-white;
     }
     .projects-grid{
         @apply w-4/5 grid grid-cols-1 justify-center gap-11;

@@ -943,10 +943,6 @@ a:hover {
   width: 100%;
   padding: 0px;
 }
-.project-header h1 {
-  font-size: 3rem;
-  line-height: 1;
-}
 .project-header .headerImage {
   position: absolute;
 }
@@ -999,6 +995,7 @@ a:hover {
 }
 .project-header > div{
         height: calc(100vh - 240px);
+        position: relative;
         box-sizing: border-box;
         min-height: 24rem;
         overflow: hidden;
@@ -1019,24 +1016,37 @@ a:hover {
     padding-right: 12rem;
   }
 }
+.project-header#websitesHeader > div {
+  position: relative;
+  overflow: visible;
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 181 255 / var(--tw-bg-opacity));
+}
 .project-header h1 {
   display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 49 49 / var(--tw-bg-opacity));
   padding-right: 0.75rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.project-header#manifestsHeader h1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 49 49 / var(--tw-bg-opacity));
+}
+.project-header#manifestsHeader p {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .project-header#graphicodeHeader h1 {
-  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .project-header p {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .projects-grid {
   display: grid;
@@ -1731,9 +1741,6 @@ a:hover {
 .box-border {
   box-sizing: border-box;
 }
-.\!block {
-  display: block !important;
-}
 .block {
   display: block;
 }
@@ -1855,18 +1862,11 @@ a:hover {
   margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
-.\!overflow-visible {
-  overflow: visible !important;
-}
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 .rounded-full {
   border-radius: 9999px;
-}
-.\!bg-\[\#57B5FF\] {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(87 181 255 / var(--tw-bg-opacity)) !important;
 }
 .\!bg-\[\#E0C797\] {
   --tw-bg-opacity: 1 !important;
@@ -2116,12 +2116,12 @@ a:hover {
     height: 90% !important;
   }
 
-  .sm\:\!w-1\/2 {
-    width: 50% !important;
-  }
-
   .sm\:w-\[130\%\] {
     width: 130%;
+  }
+
+  .sm\:\!w-1\/2 {
+    width: 50% !important;
   }
 
   .sm\:max-w-80 {
