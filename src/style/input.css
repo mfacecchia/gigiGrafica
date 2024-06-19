@@ -275,10 +275,12 @@
         @apply sm:flex-row sm:gap-5;
     }
     #photosEventsSelection{
-        /* TODO: Convert this to flexbox */
         @apply w-full space-y-3;
         @apply sm:w-1/2;
         @apply md:space-y-6;
+        @apply lg:space-y-14;
+        @apply xl:space-y-11;
+        @apply 2xl:space-y-10;
     }
     #photosEventsSelection div{
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
