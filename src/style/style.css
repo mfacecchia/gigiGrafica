@@ -505,29 +505,43 @@ video {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  width: 80%;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-    @media (min-width: 1024px) {
-
-  section {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-}
-    @media (min-width: 1280px) {
+    @media (min-width: 640px) {
 
   section {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
+    @media (min-width: 768px) {
+
+  section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+    @media (min-width: 1024px) {
+
+  section {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+    @media (min-width: 1280px) {
+
+  section {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
     @media (min-width: 1536px) {
 
   section {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
     ul li {
@@ -876,7 +890,7 @@ a:hover {
     width: 47%;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
 
   .project article a:is(#manifestsLink, #graphicodeLink) {
     width: 63%;
@@ -888,7 +902,7 @@ a:hover {
     width: 47%;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
 
   .project article a:is(#gigiLogoGraphicalDesignLink, #photographyLink) {
     width: 33.333333%;
@@ -1025,10 +1039,17 @@ a:hover {
 .project-header h1 {
   display: inline-block;
   padding-right: 0.75rem;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 768px) {
+
+  .project-header h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 .project-header#manifestsHeader h1 {
   --tw-bg-opacity: 1;
@@ -1054,16 +1075,9 @@ a:hover {
 }
 .projects-grid {
   display: grid;
-  width: 80%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   justify-content: center;
   gap: 2.75rem;
-}
-@media (min-width: 640px) {
-
-  .projects-grid {
-    width: 75%;
-  }
 }
 .projects-grid article {
   display: flex;
@@ -1140,12 +1154,9 @@ a:hover {
   margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5rem * var(--tw-space-y-reverse));
 }
-@media (min-width: 1024px) {
-
-  #dataSheet {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
+#dataSheet {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 @media (min-width: 1536px) {
 
@@ -1153,11 +1164,6 @@ a:hover {
     --tw-space-y-reverse: 0;
     margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(8rem * var(--tw-space-y-reverse));
-  }
-
-  #dataSheet {
-    padding-left: 12rem;
-    padding-right: 12rem;
   }
 }
 #dataSheet > div > :not([hidden]) ~ :not([hidden]) {
@@ -1203,35 +1209,12 @@ a:hover {
   align-items: center;
   justify-content: center;
   row-gap: 13rem;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 @media (min-width: 640px) {
 
   .photography {
     flex-direction: row;
     gap: 1.25rem;
-  }
-}
-@media (min-width: 1024px) {
-
-  .photography {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-@media (min-width: 1280px) {
-
-  .photography {
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-}
-@media (min-width: 1536px) {
-
-  .photography {
-    padding-left: 14rem;
-    padding-right: 14rem;
   }
 }
 #photosEventsSelection{
@@ -1303,31 +1286,6 @@ a:hover {
   scroll-snap-align: start;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.websiteContainer {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-@media (min-width: 1024px) {
-
-  .websiteContainer {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-@media (min-width: 1280px) {
-
-  .websiteContainer {
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-}
-@media (min-width: 1536px) {
-
-  .websiteContainer {
-    padding-left: 14rem;
-    padding-right: 14rem;
-  }
 }
 .websiteContainer:nth-of-type(n + 2) {
   margin-top: 13rem;
@@ -1479,15 +1437,36 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0px;
-  padding-right: 0px;
   row-gap: 4rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
-@media (min-width: 1536px) {
+@media (min-width: 640px) {
 
   #messages {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  #messages {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  #messages {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  #messages {
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 }
 #messages article {
@@ -1663,6 +1642,57 @@ a:hover {
 #messages .messageContent .messageBubble :is(svg, img) {
   width: 100%;
 }
+.graphicodeDefinition {
+  margin-bottom: 14rem;
+}
+.graphicodeDefinition > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
+}
+.graphicodeDefinition {
+  --tw-text-opacity: 1;
+  color: rgb(68 37 97 / var(--tw-text-opacity));
+}
+.projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+@media (min-width: 640px) {
+
+  .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+}
 .glide__track {
   overflow: hidden;
   border-radius: 0.75rem;
@@ -1723,9 +1753,6 @@ a:hover {
 }
 .mb-20 {
   margin-bottom: 5rem;
-}
-.mb-56 {
-  margin-bottom: 14rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -1863,11 +1890,6 @@ a:hover {
 }
 .gap-y-7 {
   row-gap: 1.75rem;
-}
-.space-y-24 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
 .rounded-3xl {
   border-radius: 1.5rem;
@@ -2052,7 +2074,6 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-
 @keyframes bounce {
 
   0%, 100% {
@@ -2065,11 +2086,9 @@ a:hover {
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
-
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
 }
-
 @media (min-width: 640px) {
 
   .sm\:left-4 {
@@ -2133,7 +2152,6 @@ a:hover {
     background-image: url('../assets/icons/websites.jpeg');
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:block {
@@ -2148,7 +2166,6 @@ a:hover {
     width: 91.666667%;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:col-start-1 {
@@ -2207,8 +2224,11 @@ a:hover {
   .lg\:self-start {
     align-self: flex-start;
   }
-}
 
+  .lg\:bg-\[url\(\'\.\.\/assets\/icons\/graphicode\.svg\'\)\] {
+    background-image: url('../assets/icons/graphicode.svg');
+  }
+}
 @media (min-width: 1280px) {
 
   .xl\:\!h-1\/2 {
@@ -2244,7 +2264,6 @@ a:hover {
     padding-bottom: 3.5rem;
   }
 }
-
 @media (min-width: 1536px) {
 
   .\32xl\:\!h-1\/2 {
