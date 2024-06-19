@@ -40,19 +40,29 @@ document.querySelectorAll('#photosEventsSelection > div').forEach(eventButton =>
 async function updateEventSection(eventID){
     const photographiesSection = document.querySelector('#event');
     const photographiesContainer = photographiesSection.querySelector('#photos');
-
+    const loadingMessage = document.createElement('sub');
+    photographiesContainer.style.display = 'flex';
+    loadingMessage.textContent = 'Caricamento in corso...';
+    photographiesContainer.appendChild(loadingMessage);
     // Fallback in case event does not exist
     if(!photographiesEvents[eventID]) eventID = 'garaDelCuoco';
     const selectedEvent = photographiesEvents[eventID];
     photographiesSection.querySelector('header h1').textContent = selectedEvent.title;
     photographiesSection.querySelector('header p').innerHTML = selectedEvent.subtitle;
     photographiesSection.querySelector('#camera #cameraName').textContent = selectedEvent.camera;
+    const images = await getAssetsList(`../assets/icons/events/${eventID}/`, eventID, 'jpeg');
     // Removing all images from container and adding the new event-related images
     photographiesContainer.textContent = '';
-    const images = await getAssetsList(`../assets/icons/events/${eventID}/`, eventID, 'jpeg');
-    images.forEach(imageURL => {
-        const img = document.createElement('img');
-        img.src = imageURL;
-        photographiesContainer.appendChild(img);
-    });
+    if(!images.length){
+        loadingMessage.textContent = 'Nessuna immagine disponibile...';
+        photographiesContainer.appendChild(loadingMessage);
+    }
+    else{
+        photographiesContainer.style.display = 'block';
+        images.forEach(imageURL => {
+            const img = document.createElement('img');
+            img.src = imageURL;
+            photographiesContainer.appendChild(img);
+        });
+    }
 }

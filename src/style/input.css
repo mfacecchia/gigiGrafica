@@ -294,11 +294,11 @@
         @apply xl:p-6;
     }
     #event{
-        @apply space-y-3;
+        @apply w-full space-y-3;
         @apply sm:w-1/2;
     }
     #event #photos{
-        @apply w-full h-auto aspect-[9/12] rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg;
+        @apply w-full h-auto aspect-[9/12] rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg flex items-center justify-center text-white;
     }
     #event #photos img{
         @apply w-full h-full object-cover snap-start;
