@@ -281,8 +281,7 @@
     .websiteContainer article > figure{
         @apply w-full box-border py-16 rounded-3xl overflow-visible flex;
         @apply sm:h-[400px];
-        @apply lg:h-[500px];
-        @apply xl:h-[550px];
+        @apply lg:h-[550px];
     }
     .websiteInformationContainer header{
         @apply w-full h-1/4 rounded-3xl text-white flex flex-col items-start justify-center box-border px-6 text-xl;
