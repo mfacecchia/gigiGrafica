@@ -78,7 +78,7 @@
     #logo{
         height: calc(100vh - 100px);
     }
-    section, .project-header > div article{
+    section, .projectHeader > div article{
         @apply max-w-[1920px];
     }
 }
@@ -175,81 +175,81 @@
     .header{
         @apply w-full h-auto relative;
     }
-    .project-header section{
+    .projectHeader section{
         @apply w-full p-0;
     }
-    .project-header .headerImage{
+    .projectHeader .headerImage{
         @apply absolute;
     }
-    .project-header#websitesHeader .headerImage{
+    .projectHeader#websitesHeader .headerImage{
         @apply h-3/5 min-h-56 max-h-80 -bottom-8 right-0 overflow-hidden;
         @apply lg:h-[90%] lg:right-32
     }
-    .project-header#photographyHeader .headerImage{
+    .projectHeader#photographyHeader .headerImage{
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-11;
         @apply lg:h-[90%] lg:right-32;
     }
-    .project-header#gigiLogoHeader .headerImage{
+    .projectHeader#gigiLogoHeader .headerImage{
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-52;
         @apply lg:right-0 lg:h-4/5 lg:max-h-80;
     }
-    .project-header section img{
+    .projectHeader section img{
         @apply block;
     }
-    .project-header:not(#graphicodeHeader) > div{
+    .projectHeader:not(#graphicodeHeader) > div{
         height: calc(100vh - 240px);
         @apply box-border min-h-96 overflow-hidden;
         @apply sm:min-h-56 sm:h-56;
         @apply lg:h-80;
     }
-    .project-header > div article{
+    .projectHeader > div article{
         @apply w-full h-full mx-auto relative p-11;
         @apply lg:px-48;
     }
-    .project-header#websitesHeader > div{
+    .projectHeader#websitesHeader > div{
         @apply relative overflow-visible bg-[#57B5FF];
     }
-    .project-header h1{
+    .projectHeader h1{
         @apply text-4xl inline-block pr-3 text-white;
         @apply md:text-5xl;
     }
-    .project-header#manifestsHeader h1{
+    .projectHeader#manifestsHeader h1{
         @apply bg-[#313131];
     }
-    .project-header#manifestsHeader p{
+    .projectHeader#manifestsHeader p{
         @apply text-black;
     }
-    .project-header#photographyHeader :is(h1, p){
+    .projectHeader#photographyHeader :is(h1, p){
         @apply text-[#573E1D];
     }
-    .project-header#gigiLogoHeader h1{
+    .projectHeader#gigiLogoHeader h1{
         @apply text-black;
     }
-    .project-header p{
+    .projectHeader p{
         @apply text-xl text-white;
     }
-    .projects-grid{
+    .projectsGrid{
         @apply grid grid-cols-1 justify-center gap-11;
     }
-    .projects-grid article{
+    .projectsGrid article{
         @apply flex flex-col gap-3 justify-between items-center;
         @apply sm:flex-row sm:gap-5;
     }
-    .projects-grid article:nth-child(even){
+    .projectsGrid article:nth-child(even){
         @apply sm:flex-row-reverse;
     }
-    .projects-grid article p{
+    .projectsGrid article p{
         @apply text-slate-600 leading-tight;
     }
-    .projects-grid article div{
+    .projectsGrid article div{
         @apply space-y-3;
     }
-    .projects-grid article > *{
+    .projectsGrid article > *{
         @apply w-11/12;
         @apply sm:w-1/2;
         @apply 2xl:w-2/5;
     }
-    .projects-grid article img{
+    .projectsGrid article img{
         @apply rounded-xl shadow-lg;
         @apply xl:rounded-2xl;
     }
@@ -419,7 +419,7 @@
     .graphicodeDefinition{
         @apply text-graphicode_purple-900 space-y-24 mb-56;
     }
-    .projects-grid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition{
+    .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition{
         @apply px-12;
         @apply sm:px-20;
         @apply md:px-32;
