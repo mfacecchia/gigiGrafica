@@ -250,7 +250,7 @@
         @apply 2xl:w-2/5;
     }
     .projectsGrid article img{
-        @apply rounded-xl shadow-lg;
+        @apply rounded-xl shadow-lg hover:cursor-pointer;
         @apply xl:rounded-2xl;
     }
     .backToStartBtn{
@@ -446,6 +446,6 @@
         @apply scale-110;
     }
     .modal-box{
-        @apply !bg-black/80 backdrop-blur-md text-white;
+        @apply !bg-black/50 backdrop-blur-md text-white;
     }
 }
