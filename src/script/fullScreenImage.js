@@ -14,11 +14,9 @@ function displayImageFullScreen(img){
             element.remove();
         });
     }
-    const image = document.createElement('img');
-    image.src = img.src;
-    image.alt = img.alt;
-    const imageDescription = document.createElement('h1');
-    imageDescription.textContent = img.alt;
+    const image = createElement('img', {src: img.src, alt: img.alt});
+    const imageDescription = createElement('h1', null, null, img.alt);
+    // TODO: Place this in an external function
     dialogContainer.querySelectorAll('img, h1').forEach(element => {
         element.remove();
     });
