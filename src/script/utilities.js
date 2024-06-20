@@ -15,7 +15,7 @@ function getAssetsList(pathname, filename, extension){
     });
 }
 
-function createElement(elementName, attributes = null, classes = null){
+function createElement(elementName, attributes = null, classes = null, textContent = null){
     /*
         * Creates an element from the given `elementName` and possible `attributes` and `classes` names
         * The `attributes` parameter should be an Object with the attribute name as key and the relative value as Object value
@@ -29,8 +29,7 @@ function createElement(elementName, attributes = null, classes = null){
             element.setAttribute(attributeName, attributes[attributeName]);
         }
     }
-    if(classes){
-        element.classList.add(...classes);
-    }
+    if(classes) element.classList.add(...classes);
+    if(textContent) element.textContent = textContent;
     return element;
 }
