@@ -427,6 +427,12 @@
         @apply xl:px-72;
         @apply 2xl:px-96;
     }
+    #imageFullScreen .modal-box{
+        @apply space-y-3;
+    }
+    #imageFullScreen .modal-box img{
+        @apply rounded-xl;
+    }
 }
 
 @layer components{
@@ -438,5 +444,8 @@
     }
     .glide__slide img{
         @apply scale-110;
+    }
+    .modal-box{
+        @apply !bg-black/80 backdrop-blur-md text-white;
     }
 }

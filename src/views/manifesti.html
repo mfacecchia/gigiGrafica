@@ -12,6 +12,19 @@
     </head>
     <body>
 
+        <dialog id="imageFullScreen" class="modal">
+            <div class="modal-box">
+                <form method = "dialog">
+                    <button class="btn border border-white btn-sm btn-square btn-ghost absolute right-2 top-2">X</button>
+                </form>
+                <img>
+                <h1></h1>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button></button>
+            </form>
+        </dialog>
+
         <nav>
             <a href = "index.html">
                 <img src = "../assets/icons/faviconWhite.svg" alt = "Logo Gigi">
@@ -128,5 +141,9 @@
         </footer>
 
         <script src = "../script/fade.js"></script>
+        <script src = "../script/fullScreenImage.js"></script>
+        <script>
+            addImageClickEvent('.projectsGrid img');
+        </script>
     </body>
 </html>
