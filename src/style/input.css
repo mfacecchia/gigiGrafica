@@ -142,7 +142,10 @@
         @apply h-7;
     }
     .project {
-        @apply my-11;
+        @apply my-11 scroll-mt-60;
+    }
+    .project.active {
+        @apply scroll-mt-40;
     }
     .project header {
         @apply space-y-5;

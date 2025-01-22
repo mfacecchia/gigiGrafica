@@ -462,25 +462,25 @@ html {
   scrollbar-color: currentColor transparent;
 }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Regular.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Regular.otf");
         font-display: swap;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-SemiBold.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-SemiBold.otf");
         font-display: swap;
-        font-weight: 600
+        font-weight: 600;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Bold.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Bold.otf");
         font-display: swap;
-        font-weight: 700
+        font-weight: 700;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Italic.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Italic.otf");
         font-display: swap;
         font-style: italic;
     }
@@ -493,20 +493,29 @@ html {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding-top: 7rem;
 }
-    h1, p, b, a, li, sub{
-        font-family: 'Mluvka'
+    h1,
+    p,
+    b,
+    a,
+    li,
+    sub {
+        font-family: "Mluvka";
     }
     h1 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
 }
-    a, b, h1 {
+    a,
+    b,
+    h1 {
   font-weight: 600;
 }
     @media (min-width: 768px) {
 
-  a, b, h1 {
+  a,
+    b,
+    h1 {
     font-weight: 700;
   }
 }
@@ -559,7 +568,8 @@ html {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-    nav img, footer img {
+    nav img,
+    footer img {
   height: 2.75rem;
   width: auto;
 }
@@ -641,10 +651,11 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1500ms;
 }
-    #logo{
+    #logo {
         height: calc(100vh - 100px);
     }
-    section, .projectHeader > div article {
+    section,
+    .projectHeader > div article {
   max-width: 1920px;
 }
 
@@ -1450,13 +1461,18 @@ a:hover {
 .project {
   margin-top: 2.75rem;
   margin-bottom: 2.75rem;
+  scroll-margin-top: 15rem;
+}
+.project.active {
+  scroll-margin-top: 10rem;
 }
 .project header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
-.project h1, #certificates h1 {
+.project h1,
+    #certificates h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
@@ -1631,7 +1647,7 @@ a:hover {
 .projectHeader section img {
   display: block;
 }
-.projectHeader:not(#graphicodeHeader) > div{
+.projectHeader:not(#graphicodeHeader) > div {
         height: calc(100vh - 240px);
         box-sizing: border-box;
         min-height: 24rem;
@@ -2339,41 +2355,65 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(68 37 97 / var(--tw-text-opacity));
 }
-.projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+.projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 @media (min-width: 640px) {
 
-  .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 @media (min-width: 768px) {
 
-  .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 }
 @media (min-width: 1024px) {
 
-  .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
     padding-left: 13rem;
     padding-right: 13rem;
   }
 }
 @media (min-width: 1280px) {
 
-  .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
     padding-left: 18rem;
     padding-right: 18rem;
   }
 }
 @media (min-width: 1536px) {
 
-  .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition {
+  .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
     padding-left: 24rem;
     padding-right: 24rem;
   }
