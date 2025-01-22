@@ -2,60 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Regular.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Regular.otf");
         font-display: swap;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-SemiBold.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-SemiBold.otf");
         font-display: swap;
-        font-weight: 600
+        font-weight: 600;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Bold.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Bold.otf");
         font-display: swap;
-        font-weight: 700
+        font-weight: 700;
     }
     @font-face {
-        font-family: 'Mluvka';
-        src: url('../assets/fonts/Mluvka-Italic.otf');
+        font-family: "Mluvka";
+        src: url("../assets/fonts/Mluvka-Italic.otf");
         font-display: swap;
         font-style: italic;
     }
-    *{
+    * {
         @apply scroll-smooth;
     }
-    body{
+    body {
         @apply bg-gray-100 pt-28 min-w-[350px];
     }
-    h1, p, b, a, li, sub{
-        font-family: 'Mluvka'
+    h1,
+    p,
+    b,
+    a,
+    li,
+    sub {
+        font-family: "Mluvka";
     }
-    h1{
+    h1 {
         @apply font-bold text-2xl;
     }
-    a, b, h1{
+    a,
+    b,
+    h1 {
         @apply font-semibold;
         @apply md:font-bold;
     }
-    nav{
+    nav {
         @apply w-full px-6 py-4 box-border flex justify-start items-center backdrop-blur-md bg-black/80 fixed top-0 left-0 z-50;
         @apply xl:px-11;
     }
-    footer{
+    footer {
         @apply w-full mt-20 px-6 pt-11 pb-3 box-border bg-black/80 flex flex-col items-center justify-center space-y-5 text-white;
     }
-    nav img, footer img{
+    nav img,
+    footer img {
         @apply h-11 w-auto;
     }
-    footer section:first-child{
+    footer section:first-child {
         @apply flex items-center justify-between px-0;
     }
-    section{
+    section {
         @apply w-full px-16 box-border mx-auto;
         @apply sm:px-20;
         @apply md:px-24;
@@ -63,225 +71,227 @@
         @apply xl:px-48;
         @apply 2xl:px-60;
     }
-    ul li{
+    ul li {
         @apply list-disc;
     }
-    hr{
+    hr {
         @apply my-40 box-border mx-11 bg-black border-none h-[1.4px] rounded-full;
     }
-    .fade{
+    .fade {
         @apply translate-y-32 opacity-0;
     }
-    .fade.active{
+    .fade.active {
         @apply translate-y-0 opacity-100 transition-[transform,opacity] duration-[1500ms];
     }
-    #logo{
+    #logo {
         height: calc(100vh - 100px);
     }
-    section, .projectHeader > div article{
+    section,
+    .projectHeader > div article {
         @apply max-w-[1920px];
     }
 }
 
-@layer components{
-    a:hover{
+@layer components {
+    a:hover {
         @apply animate-pulse;
     }
-    .sectionLink{
+    .sectionLink {
         @apply px-3 py-0 border border-solid border-black rounded-full flex justify-center items-center;
     }
-    .sectionLink img{
+    .sectionLink img {
         @apply h-5;
     }
-    #pageLinks{
+    #pageLinks {
         @apply flex flex-row justify-center gap-5;
     }
-    #personalInfo{
+    #personalInfo {
         @apply h-auto grid grid-cols-1 gap-11;
         @apply sm:grid-cols-2;
     }
-    #personalInfo article{
-        @apply space-y-2
+    #personalInfo article {
+        @apply space-y-2;
     }
-    #personalInfo article ul{
+    #personalInfo article ul {
         @apply grid grid-cols-1 w-full;
         @apply lg:grid-cols-2;
     }
-    #personalInfo p{
+    #personalInfo p {
         @apply text-justify leading-tight;
     }
-    #personalInfo img{
+    #personalInfo img {
         @apply size-6 mt-0;
     }
-    #software{
+    #software {
         @apply grid grid-cols-1 gap-5;
         @apply lg:grid-cols-2;
     }
-    #software div{
+    #software div {
         @apply flex gap-x-2 justify-start items-center;
     }
-    #software div p{
+    #software div p {
         @apply font-semibold;
     }
-    #social{
+    #social {
         @apply flex flex-col justify-center items-start gap-5;
     }
-    #social a{
+    #social a {
         @apply flex gap-x-2 items-center font-normal;
     }
-    #social img{
+    #social img {
         @apply h-7;
     }
-    .project{
+    .project {
         @apply my-11;
     }
-    .project header{
+    .project header {
         @apply space-y-5;
     }
-    .project h1, #certificates h1{
+    .project h1,
+    #certificates h1 {
         @apply text-4xl;
     }
-    .project article{
+    .project article {
         @apply w-full flex flex-wrap gap-x-4 gap-y-7 mt-11;
     }
-    .project article a{
+    .project article a {
         @apply bg-cover bg-center rounded-2xl w-full min-h-80 box-border p-4 shadow-lg flex justify-between transition-all duration-150 aspect-[9/12];
         @apply hover:scale-[102%] hover:shadow-2xl;
         @apply sm:aspect-auto sm:min-h-72;
         @apply xl:min-h-96;
     }
-    .project article a:is(#manifestsLink, #graphicodeLink){
+    .project article a:is(#manifestsLink, #graphicodeLink) {
         @apply sm:w-[47%];
         @apply lg:w-[63%];
     }
-    .project article a:is(#gigiLogoGraphicalDesignLink, #photographyLink){
+    .project article a:is(#gigiLogoGraphicalDesignLink, #photographyLink) {
         @apply sm:w-[47%];
         @apply lg:w-1/3;
     }
-    .project article a main{
+    .project article a main {
         @apply w-3/4 space-y-2 leading-tight;
     }
-    .project article a svg{
+    .project article a svg {
         @apply size-5;
     }
-    #certificates{
+    #certificates {
         @apply flex flex-col gap-11 mt-32 mb-40;
         @apply sm:flex-row sm:items-center sm:justify-between;
     }
-    #certificates .certificatesSlider{
+    #certificates .certificatesSlider {
         @apply sm:w-1/2;
         @apply lg:w-[47%];
     }
-    .header{
+    .header {
         @apply w-full h-auto relative;
     }
-    .projectHeader section{
+    .projectHeader section {
         @apply w-full p-0;
     }
-    .projectHeader .headerImage{
+    .projectHeader .headerImage {
         @apply absolute;
     }
-    .projectHeader#websitesHeader .headerImage{
+    .projectHeader#websitesHeader .headerImage {
         @apply h-3/5 min-h-56 max-h-80 -bottom-8 right-0 overflow-hidden;
-        @apply lg:h-[90%] lg:right-32
+        @apply lg:h-[90%] lg:right-32;
     }
-    .projectHeader#photographyHeader .headerImage{
+    .projectHeader#photographyHeader .headerImage {
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-11;
         @apply lg:h-[90%] lg:right-32;
     }
-    .projectHeader#gigiLogoHeader .headerImage{
+    .projectHeader#gigiLogoHeader .headerImage {
         @apply h-1/2 min-h-52 max-h-72 bottom-0 -right-52;
         @apply lg:right-0 lg:h-4/5 lg:max-h-80;
     }
-    .projectHeader section img{
+    .projectHeader section img {
         @apply block;
     }
-    .projectHeader:not(#graphicodeHeader) > div{
+    .projectHeader:not(#graphicodeHeader) > div {
         height: calc(100vh - 240px);
         @apply box-border min-h-96 overflow-hidden;
         @apply sm:min-h-56 sm:h-56;
         @apply lg:h-80;
     }
-    .projectHeader > div article{
+    .projectHeader > div article {
         @apply w-full h-full mx-auto relative p-11;
         @apply lg:px-48;
     }
-    .projectHeader#websitesHeader > div{
+    .projectHeader#websitesHeader > div {
         @apply relative overflow-visible bg-[#57B5FF];
     }
-    .projectHeader h1{
+    .projectHeader h1 {
         @apply text-4xl inline-block pr-3 text-white;
         @apply md:text-5xl;
     }
-    .projectHeader#manifestsHeader h1{
+    .projectHeader#manifestsHeader h1 {
         @apply bg-[#313131];
     }
-    .projectHeader#manifestsHeader p{
+    .projectHeader#manifestsHeader p {
         @apply text-black;
     }
-    .projectHeader#photographyHeader :is(h1, p){
+    .projectHeader#photographyHeader :is(h1, p) {
         @apply text-[#573E1D];
     }
-    .projectHeader#gigiLogoHeader h1{
+    .projectHeader#gigiLogoHeader h1 {
         @apply text-black;
     }
-    .projectHeader p{
+    .projectHeader p {
         @apply text-xl text-white;
     }
-    .projectsGrid{
+    .projectsGrid {
         @apply grid grid-cols-1 justify-center gap-11;
     }
-    .projectsGrid article{
+    .projectsGrid article {
         @apply flex flex-col gap-3 justify-between items-center;
         @apply sm:flex-row sm:gap-5;
     }
-    .projectsGrid article:nth-child(even){
+    .projectsGrid article:nth-child(even) {
         @apply sm:flex-row-reverse;
     }
-    .projectsGrid article p{
+    .projectsGrid article p {
         @apply text-slate-600 leading-tight;
     }
-    .projectsGrid article div{
+    .projectsGrid article div {
         @apply space-y-3;
     }
-    .projectsGrid article > *{
+    .projectsGrid article > * {
         @apply w-11/12;
         @apply sm:w-1/2;
         @apply 2xl:w-2/5;
     }
-    .projectsGrid article img{
+    .projectsGrid article img {
         @apply rounded-xl shadow-lg hover:cursor-pointer;
         @apply xl:rounded-2xl;
     }
-    .backToStartBtn{
+    .backToStartBtn {
         @apply -rotate-90 ml-auto w-11;
         @apply hover:animate-pulse;
     }
-    #dataSheet{
+    #dataSheet {
         @apply px-11 space-y-20;
         @apply 2xl:space-y-32;
     }
-    #dataSheet > div{
+    #dataSheet > div {
         @apply space-y-5;
     }
-    #dataSheet > div header{
+    #dataSheet > div header {
         @apply flex flex-col items-end;
     }
-    #dataSheet > div div{
+    #dataSheet > div div {
         @apply flex flex-col gap-5;
         @apply sm:flex-row;
     }
-    #dataSheet .logoColorTest{
+    #dataSheet .logoColorTest {
         @apply w-full flex-col gap-y-5 md:w-1/2;
     }
-    #dataSheet > div div.gridElement{
+    #dataSheet > div div.gridElement {
         @apply grid gap-5 w-full;
     }
-    .photography{
+    .photography {
         @apply flex flex-col items-center justify-center gap-y-52;
         @apply sm:flex-row sm:gap-5;
     }
-    #photosEventsSelection{
+    #photosEventsSelection {
         @apply w-full space-y-3;
         @apply sm:w-1/2;
         @apply md:space-y-6;
@@ -289,99 +299,99 @@
         @apply xl:space-y-11;
         @apply 2xl:space-y-10;
     }
-    #photosEventsSelection div{
+    #photosEventsSelection div {
         @apply flex flex-col justify-center w-full p-4 rounded-2xl text-white;
         @apply xl:p-6;
     }
-    #event{
+    #event {
         @apply w-full space-y-3;
         @apply sm:w-1/2;
     }
-    #event #photos{
+    #event #photos {
         @apply w-full h-auto aspect-[9/12] rounded-2xl overflow-y-scroll snap-y snap-mandatory bg-black/80 shadow-lg flex items-center justify-center text-white;
     }
-    #event #photos img{
+    #event #photos img {
         @apply w-full h-full object-cover snap-start;
     }
-    #event #photos p{
+    #event #photos p {
         @apply inline-block w-4/5 text-center;
     }
-    .websiteContainer:nth-of-type(n + 2){
+    .websiteContainer:nth-of-type(n + 2) {
         @apply mt-52;
     }
-    .websiteContainer article{
+    .websiteContainer article {
         @apply w-full flex flex-col items-center justify-center gap-2;
         @apply sm:flex-row;
     }
-    .websiteContainer .websiteInformationContainer{
+    .websiteContainer .websiteInformationContainer {
         @apply flex flex-col gap-2 w-full h-[400px] rounded-3xl;
         @apply lg:h-[550px];
         @apply 2xl:max-h-[550px];
     }
-    .websiteContainer article > figure{
+    .websiteContainer article > figure {
         @apply w-full box-border py-16 rounded-3xl overflow-visible flex;
         @apply sm:h-[400px];
         @apply lg:h-[550px];
     }
-    .websiteInformationContainer header{
+    .websiteInformationContainer header {
         @apply w-full h-1/4 rounded-3xl text-white flex flex-col items-start justify-center box-border px-6 text-xl;
         @apply xl:h-1/2;
     }
-    .websiteInformationContainer main{
+    .websiteInformationContainer main {
         @apply w-full h-3/4 rounded-3xl bg-gray-300 box-border p-2 flex flex-col gap-2;
     }
-    .websiteInformationContainer main aside{
+    .websiteInformationContainer main aside {
         @apply h-full w-full rounded-3xl bg-slate-200 box-border p-7 overflow-x-hidden flex flex-col items-start justify-center relative;
     }
-    .websiteInformationContainer main aside p{
+    .websiteInformationContainer main aside p {
         @apply overflow-y-scroll;
     }
-    .websiteInformationContainer .websiteFigures{
+    .websiteInformationContainer .websiteFigures {
         @apply w-full h-2/5 rounded-3xl flex gap-x-2;
         @apply xl:h-[36%];
     }
-    .websiteFigures figure{
+    .websiteFigures figure {
         @apply w-full h-full rounded-3xl flex overflow-hidden;
     }
-    .websiteFigures figure.square{
+    .websiteFigures figure.square {
         @apply w-auto h-full aspect-square flex items-center justify-center overflow-visible;
     }
-    .websiteFigures figure img{
+    .websiteFigures figure img {
         @apply max-w-none;
     }
-    #graphicodeContacts{
+    #graphicodeContacts {
         @apply space-y-3;
     }
-    #graphicodeContacts > div a{
+    #graphicodeContacts > div a {
         @apply flex items-center gap-2;
     }
-    #graphicodeContacts > div a img{
+    #graphicodeContacts > div a img {
         @apply h-5;
     }
-    #messages{
+    #messages {
         @apply px-11 flex flex-col items-center gap-y-16 mb-40;
         @apply sm:px-14;
         @apply md:px-20;
         @apply lg:px-36;
         @apply xl:px-48;
     }
-    #messages article{
+    #messages article {
         @apply w-full min-w-[300px] flex flex-col gap-x-2;
     }
-    #messages article .messageSticker img{
+    #messages article .messageSticker img {
         @apply h-32 ml-4;
         @apply sm:ml-6;
         @apply lg:h-40;
         @apply 2xl:h-36;
     }
-    #messages article.messageSender .messageSticker img{
+    #messages article.messageSender .messageSticker img {
         @apply h-40;
-        @apply lg:h-48
+        @apply lg:h-48;
     }
-    #messages .messageSender{
+    #messages .messageSender {
         @apply justify-self-end items-end;
     }
-    #messages .messageContent{
+    #messages .messageContent {
         @apply w-11/12 flex gap-x-1;
         @apply sm:w-4/6;
         @apply md:w-3/5;
@@ -389,20 +399,20 @@
         @apply xl:w-2/5;
         @apply 2xl:w-1/3;
     }
-    #messages .messageContent .contactIcon{
+    #messages .messageContent .contactIcon {
         @apply w-9 aspect-square rounded-full bg-gradient-to-b overflow-hidden flex items-end justify-center;
         @apply sm:w-10;
         @apply md:w-11;
     }
-    #messages .messageContent .contactIcon img{
+    #messages .messageContent .contactIcon img {
         @apply w-11/12;
     }
-    #messages .messageContent .messageBubble{
+    #messages .messageContent .messageBubble {
         @apply flex items-center justify-start w-full box-border px-3 text-white text-xs relative;
-        @apply sm:px-6 sm:text-sm;;
+        @apply sm:px-6 sm:text-sm;
         @apply lg:text-base;
     }
-    #messages .messageSender .messageContent{
+    #messages .messageSender .messageContent {
         @apply w-3/4;
         @apply sm:w-3/5;
         @apply md:w-[55%];
@@ -410,16 +420,20 @@
         @apply xl:w-[35%];
         @apply 2xl:w-[30%];
     }
-    #messages .messageSender .messageContent .messageBubble{
+    #messages .messageSender .messageContent .messageBubble {
         @apply justify-end;
     }
-    #messages .messageContent .messageBubble :is(svg, img){
+    #messages .messageContent .messageBubble :is(svg, img) {
         @apply w-full;
     }
-    .graphicodeDefinition{
+    .graphicodeDefinition {
         @apply text-graphicode_purple-900 space-y-24 mb-56;
     }
-    .projectsGrid, #dataSheet, .websiteContainer, .photography, .graphicodeDefinition{
+    .projectsGrid,
+    #dataSheet,
+    .websiteContainer,
+    .photography,
+    .graphicodeDefinition {
         @apply px-12;
         @apply sm:px-20;
         @apply md:px-32;
@@ -427,25 +441,25 @@
         @apply xl:px-72;
         @apply 2xl:px-96;
     }
-    #imageFullScreen .modal-box{
+    #imageFullScreen .modal-box {
         @apply space-y-3;
     }
-    #imageFullScreen .modal-box img{
+    #imageFullScreen .modal-box img {
         @apply rounded-xl;
     }
 }
 
-@layer components{
-    .glide__track{
+@layer components {
+    .glide__track {
         @apply rounded-xl overflow-hidden shadow-lg;
     }
-    .glide__slide{
+    .glide__slide {
         @apply list-none;
     }
-    .glide__slide img{
+    .glide__slide img {
         @apply scale-110;
     }
-    .modal-box{
+    .modal-box {
         @apply !bg-black/50 backdrop-blur-md text-white;
     }
 }
