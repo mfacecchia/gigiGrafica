@@ -1,111 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang = "it">
+<html lang="it">
     <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel = "icon" href = "../assets/icons/favicon.svg">
-        <link rel = "stylesheet" href = "../style/style.css">
+        <link rel="icon" href="../assets/icons/favicon.svg" />
+        <link rel="stylesheet" href="../style/style.css" />
 
         <title>Gigi Grafica - Fotografia</title>
     </head>
     <body>
-
         <nav>
-            <a href = "index.html">
-                <img src = "../assets/icons/faviconWhite.svg" alt = "Logo Gigi">
+            <a href="index.html">
+                <img src="../assets/icons/faviconWhite.svg" alt="Logo Gigi" />
             </a>
         </nav>
-        
-        <header class = "projectHeader" id = "photographyHeader">
-            <div class = "bg-[#E0C797]">
+
+        <header class="projectHeader" id="photographyHeader">
+            <div class="bg-[#E0C797]">
                 <article>
                     <section>
                         <h1>Fotografia</h1>
                         <p>Progetti scolastici e extra scolastici</p>
                         <p>anni 2022/2024</p>
                     </section>
-                    <img class = "headerImage" src = "../assets/icons/photosNoBg.png" alt = "Macchine fotografiche">
+                    <img
+                        class="headerImage"
+                        src="../assets/icons/photosNoBg.png"
+                        alt="Macchine fotografiche"
+                    />
                 </article>
             </div>
-            <hr class = "mt-11">
+            <hr class="mt-11" />
         </header>
 
-        <section class = "photography">
-            <aside id = "photosEventsSelection">
-                <div class = "bg-[#573E1D]" id = "garaDelCuoco" role = "button" title = "Vedi le foto dell'evento Gara del Cuoco">
+        <section class="photography">
+            <aside id="photosEventsSelection">
+                <div
+                    class="bg-[#573E1D]"
+                    id="garaDelCuoco"
+                    role="button"
+                    title="Vedi le foto dell'evento Gara del Cuoco"
+                >
                     <b>Evento</b>
                     <b>Gara del cuoco</b>
                 </div>
-                <div class = "bg-[#6B542F]" id = "festaDellAlbero" role = "button" title = "Vedi le foto dell'evento Festa dell'Albero">
+                <div
+                    class="bg-[#6B542F]"
+                    id="festaDellAlbero"
+                    role="button"
+                    title="Vedi le foto dell'evento Festa dell'Albero"
+                >
                     <b>Evento</b>
                     <b>Festa dell'albero</b>
                 </div>
-                <div class = "bg-[#AF9660]" id = "peppeZullo" role = "button" alt = "Vedi le foto della visita al ristorante Peppe Zullo">
+                <div
+                    class="bg-[#AF9660]"
+                    id="peppeZullo"
+                    role="button"
+                    alt="Vedi le foto della visita al ristorante Peppe Zullo"
+                >
                     <b>Visita</b>
                     <b>Peppe Zullo</b>
                 </div>
-                <div class = "bg-[#DFC696]" id = "salineMargherita" role = "button" title = "Vedi le foto della visita a Saline Margherita di Savoia">
+                <div
+                    class="bg-[#DFC696]"
+                    id="salineMargherita"
+                    role="button"
+                    title="Vedi le foto della visita a Saline Margherita di Savoia"
+                >
                     <b>Visita</b>
                     <b>Saline Margherita di Savoia</b>
                 </div>
-                <div class = "bg-[#313131] items-center" id = "vari" role = "button" title = "Vedi foto varie">
+                <div
+                    class="bg-[#313131] items-center"
+                    id="vari"
+                    role="button"
+                    title="Vedi foto varie"
+                >
                     <b>Vari</b>
                 </div>
             </aside>
-            <aside id = "event">
+            <aside id="event">
                 <header>
                     <h1>Evento Gara del cuoco</h1>
                     <p>
-                        Lavori 2022/2023 foto evento<br>
-                        2a Edizione la gara del cuoco<br>
+                        Lavori 2022/2023 foto evento<br />
+                        2a Edizione la gara del cuoco<br />
                         I.I.S.S Einaudi FG
                     </p>
                 </header>
-                <div id = "photos">
+                <div id="photos">
                     <p>Caricamento in corso...</p>
                 </div>
-                <sub id = "camera">Shot on <span id = "cameraName"></span></sub>
+                <sub id="camera">Shot on <span id="cameraName"></span></sub>
             </aside>
         </section>
 
-        <section class = "my-20">
-            <div title = "Torna all'inizio" class = "backToStartBtn" role = "button" onclick = "window.scrollTo(undefined, 0)">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.62 22.62"><defs></defs><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path class="fill-black/80" d="M11.31,0A11.31,11.31,0,1,0,22.62,11.31,11.31,11.31,0,0,0,11.31,0Zm7.85,11.25a1.22,1.22,0,0,1-.13.47,1.16,1.16,0,0,1-.29.37l-6.65,5.69a1.21,1.21,0,0,1-1.7-.13,1.21,1.21,0,0,1,.13-1.7l4.18-3.57h-10a1.2,1.2,0,1,1,0-2.4h9.91l-4-3.29A1.2,1.2,0,0,1,10.37,5a1.22,1.22,0,0,1,1.7-.17l6.62,5.39a1.23,1.23,0,0,1,.47,1Z"/></g></g></svg>
+        <section class="my-20">
+            <div
+                title="Torna all'inizio"
+                class="backToStartBtn"
+                role="button"
+                onclick="window.scrollTo(undefined, 0)"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22.62 22.62"
+                >
+                    <defs></defs>
+                    <g id="Livello_2" data-name="Livello 2">
+                        <g id="Livello_1-2" data-name="Livello 1">
+                            <path
+                                class="fill-black/80"
+                                d="M11.31,0A11.31,11.31,0,1,0,22.62,11.31,11.31,11.31,0,0,0,11.31,0Zm7.85,11.25a1.22,1.22,0,0,1-.13.47,1.16,1.16,0,0,1-.29.37l-6.65,5.69a1.21,1.21,0,0,1-1.7-.13,1.21,1.21,0,0,1,.13-1.7l4.18-3.57h-10a1.2,1.2,0,1,1,0-2.4h9.91l-4-3.29A1.2,1.2,0,0,1,10.37,5a1.22,1.22,0,0,1,1.7-.17l6.62,5.39a1.23,1.23,0,0,1,.47,1Z"
+                            />
+                        </g>
+                    </g>
+                </svg>
             </div>
         </section>
 
-        <hr class = "mb-0">
+        <hr class="mb-0" />
 
         <footer>
             <section>
-                <div id = "social">
-                    <a href = "https://instagram.com/_luigi_ciava_">
-                        <img src = "../assets/icons/instagramWhite.svg" alt = "Instagram">
+                <div id="social">
+                    <a href="https://instagram.com/_luigi_ciava_">
+                        <img
+                            src="../assets/icons/instagramWhite.svg"
+                            alt="Instagram"
+                        />
                         <p>_luigi_ciava_</p>
                     </a>
-                    <a href = "">
-                        <img src = "../assets/icons/facebookWhite.svg" alt = "Facebook">
+                    <a href="">
+                        <img
+                            src="../assets/icons/facebookWhite.svg"
+                            alt="Facebook"
+                        />
                         <p>Luigi Ciavarella</p>
                     </a>
-                    <a href = "">
-                        <img src = "../assets/icons/linkedinWhite.svg" alt = "LinkedIn">
+                    <a href="">
+                        <img
+                            src="../assets/icons/linkedinWhite.svg"
+                            alt="LinkedIn"
+                        />
                         <p>Luigi Ciavarella</p>
                     </a>
                 </div>
-                <img src = "../assets/icons/faviconWhite.svg" alt = "Logo Gigi">
+                <img src="../assets/icons/faviconWhite.svg" alt="Logo Gigi" />
             </section>
-            <section class = "text-center font-light">
+            <section class="text-center font-light">
                 <p>Copyright © 2024 GraphiCode. Tutti i diritti riservati.</p>
             </section>
         </footer>
 
-        <script src = "../script/utilities.js"></script>
-        <script src = "../script/eventPhotographiesSelector.js"></script>
-        <script src = "../script/fade.js"></script>
+        <script src="../script/utilities.js"></script>
+        <script src="../script/eventPhotographiesSelector.js"></script>
+        <script src="../script/fade.js"></script>
         <script>
-            updateEventSection('garaDelCuoco');
+            updateEventSection("garaDelCuoco");
         </script>
     </body>
 </html>
