@@ -1,7 +1,7 @@
 async function setSliderElements() {
     const slider = document.querySelector(".certificatesSlider .glide__slides");
     const certificates = await getAssetsList(
-        "../assets/icons/certificates/",
+        "./assets/icons/certificates/",
         "certificate",
         "jpeg"
     );
