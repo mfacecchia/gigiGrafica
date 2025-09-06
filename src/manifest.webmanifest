@@ -1,0 +1,14 @@
+{
+    "name": "Gigi Grafica",
+    "icons": [
+        {
+            "src": "./assets/icons/faviconBordered.png",
+            "sizes": "129x126",
+            "purpose": "any maskable"
+        }
+    ],
+    "display": "standalone",
+    "background_color": "#F3F4F6",
+    "theme_color": "#313131",
+    "start_url": "https://gigi-grafica.vercel.app"
+}
